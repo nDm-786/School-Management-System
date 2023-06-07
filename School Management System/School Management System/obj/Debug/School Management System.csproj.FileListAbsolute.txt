@@ -44,3 +44,4 @@ C:\Users\Mr. Bhatti\source\repos\nDm-786\School-Management-System\School Managem
 C:\Users\Mr. Bhatti\source\repos\nDm-786\School-Management-System\School Management System\School Management System\obj\Debug\School Management System.csproj.CopyComplete
 C:\Users\Mr. Bhatti\source\repos\nDm-786\School-Management-System\School Management System\School Management System\obj\Debug\School Management System.exe
 C:\Users\Mr. Bhatti\source\repos\nDm-786\School-Management-System\School Management System\School Management System\obj\Debug\School Management System.pdb
+C:\Users\Mr. Bhatti\Source\Repos\nDm-786\School-Management-System\School Management System\School Management System\obj\Debug\School_Management_System.AdminPortal.resources

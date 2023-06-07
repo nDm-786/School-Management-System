@@ -10,16 +10,11 @@ using System.Windows.Forms;
 
 namespace School_Management_System
 {
-    public partial class Form1 : Form
+    public partial class AdminPortal : Form
     {
-        public Form1()
+        public AdminPortal()
         {
             InitializeComponent();
-        }
-
-        private void Form1_Load(object sender, EventArgs e)
-        {
-
         }
     }
 }
