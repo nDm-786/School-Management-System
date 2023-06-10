@@ -51,12 +51,6 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
-    <Reference Include="Bunifu.UI.WinForms.BunifuButton">
-      <HintPath>..\..\..\..\..\..\Downloads\BunifuCrack-main\Bunifu.UI.WinForms.BunifuButton.dll</HintPath>
-    </Reference>
-    <Reference Include="Bunifu.UI.WinForms.BunifuRadioButton">
-      <HintPath>..\..\..\..\..\..\Downloads\BunifuCrack-main\Bunifu.UI.WinForms.BunifuRadioButton.dll</HintPath>
-    </Reference>
     <Reference Include="Costura, Version=3.3.3.0, Culture=neutral, PublicKeyToken=9919ef960d84173d, processorArchitecture=MSIL">
       <HintPath>..\packages\Costura.Fody.3.3.3\lib\net40\Costura.dll</HintPath>
     </Reference>
