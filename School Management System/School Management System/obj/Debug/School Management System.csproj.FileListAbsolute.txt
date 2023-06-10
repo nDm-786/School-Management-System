@@ -45,53 +45,6 @@ C:\Users\Mr. Bhatti\source\repos\nDm-786\School-Management-System\School Managem
 C:\Users\Mr. Bhatti\source\repos\nDm-786\School-Management-System\School Management System\School Management System\obj\Debug\School Management System.exe
 C:\Users\Mr. Bhatti\source\repos\nDm-786\School-Management-System\School Management System\School Management System\obj\Debug\School Management System.pdb
 C:\Users\Mr. Bhatti\Source\Repos\nDm-786\School-Management-System\School Management System\School Management System\obj\Debug\School_Management_System.AdminPortal.resources
-C:\Users\USER\Source\Repos\nDm-786\School-Management-System\School Management System\School Management System\bin\Debug\School Management System.exe.config
-C:\Users\USER\Source\Repos\nDm-786\School-Management-System\School Management System\School Management System\bin\Debug\School Management System.exe
-C:\Users\USER\Source\Repos\nDm-786\School-Management-System\School Management System\School Management System\bin\Debug\School Management System.pdb
-C:\Users\USER\Source\Repos\nDm-786\School-Management-System\School Management System\School Management System\bin\Debug\Microsoft.Win32.Registry.xml
-C:\Users\USER\Source\Repos\nDm-786\School-Management-System\School Management System\School Management System\bin\Debug\Microsoft.Win32.Registry.AccessControl.xml
-C:\Users\USER\Source\Repos\nDm-786\School-Management-System\School Management System\School Management System\bin\Debug\Microsoft.Win32.SystemEvents.xml
-C:\Users\USER\Source\Repos\nDm-786\School-Management-System\School Management System\School Management System\bin\Debug\Newtonsoft.Json.xml
-C:\Users\USER\Source\Repos\nDm-786\School-Management-System\School Management System\School Management System\bin\Debug\RestSharp.xml
-C:\Users\USER\Source\Repos\nDm-786\School-Management-System\School Management System\School Management System\bin\Debug\System.Buffers.xml
-C:\Users\USER\Source\Repos\nDm-786\School-Management-System\School Management System\School Management System\bin\Debug\System.CodeDom.xml
-C:\Users\USER\Source\Repos\nDm-786\School-Management-System\School Management System\School Management System\bin\Debug\System.Configuration.ConfigurationManager.xml
-C:\Users\USER\Source\Repos\nDm-786\School-Management-System\School Management System\School Management System\bin\Debug\System.Data.Odbc.xml
-C:\Users\USER\Source\Repos\nDm-786\School-Management-System\School Management System\School Management System\bin\Debug\System.Data.OleDb.xml
-C:\Users\USER\Source\Repos\nDm-786\School-Management-System\School Management System\School Management System\bin\Debug\System.Data.SqlClient.xml
-C:\Users\USER\Source\Repos\nDm-786\School-Management-System\School Management System\School Management System\bin\Debug\System.Diagnostics.EventLog.xml
-C:\Users\USER\Source\Repos\nDm-786\School-Management-System\School Management System\School Management System\bin\Debug\System.Diagnostics.PerformanceCounter.xml
-C:\Users\USER\Source\Repos\nDm-786\School-Management-System\School Management System\School Management System\bin\Debug\System.Drawing.Common.xml
-C:\Users\USER\Source\Repos\nDm-786\School-Management-System\School Management System\School Management System\bin\Debug\System.IO.FileSystem.AccessControl.xml
-C:\Users\USER\Source\Repos\nDm-786\School-Management-System\School Management System\School Management System\bin\Debug\System.IO.Packaging.xml
-C:\Users\USER\Source\Repos\nDm-786\School-Management-System\School Management System\School Management System\bin\Debug\System.IO.Ports.xml
-C:\Users\USER\Source\Repos\nDm-786\School-Management-System\School Management System\School Management System\bin\Debug\System.Memory.xml
-C:\Users\USER\Source\Repos\nDm-786\School-Management-System\School Management System\School Management System\bin\Debug\System.Numerics.Vectors.xml
-C:\Users\USER\Source\Repos\nDm-786\School-Management-System\School Management System\School Management System\bin\Debug\System.Runtime.CompilerServices.Unsafe.xml
-C:\Users\USER\Source\Repos\nDm-786\School-Management-System\School Management System\School Management System\bin\Debug\System.Security.AccessControl.xml
-C:\Users\USER\Source\Repos\nDm-786\School-Management-System\School Management System\School Management System\bin\Debug\System.Security.Cryptography.Cng.xml
-C:\Users\USER\Source\Repos\nDm-786\School-Management-System\School Management System\School Management System\bin\Debug\System.Security.Cryptography.Pkcs.xml
-C:\Users\USER\Source\Repos\nDm-786\School-Management-System\School Management System\School Management System\bin\Debug\System.Security.Cryptography.ProtectedData.xml
-C:\Users\USER\Source\Repos\nDm-786\School-Management-System\School Management System\School Management System\bin\Debug\System.Security.Cryptography.Xml.xml
-C:\Users\USER\Source\Repos\nDm-786\School-Management-System\School Management System\School Management System\bin\Debug\System.Security.Permissions.xml
-C:\Users\USER\Source\Repos\nDm-786\School-Management-System\School Management System\School Management System\bin\Debug\System.Security.Principal.Windows.xml
-C:\Users\USER\Source\Repos\nDm-786\School-Management-System\School Management System\School Management System\bin\Debug\System.ServiceModel.Syndication.xml
-C:\Users\USER\Source\Repos\nDm-786\School-Management-System\School Management System\School Management System\bin\Debug\System.ServiceProcess.ServiceController.xml
-C:\Users\USER\Source\Repos\nDm-786\School-Management-System\School Management System\School Management System\bin\Debug\System.Text.Encoding.CodePages.xml
-C:\Users\USER\Source\Repos\nDm-786\School-Management-System\School Management System\School Management System\bin\Debug\System.Threading.AccessControl.xml
-C:\Users\USER\Source\Repos\nDm-786\School-Management-System\School Management System\School Management System\obj\Debug\School Management System.csproj.AssemblyReference.cache
-C:\Users\USER\Source\Repos\nDm-786\School-Management-System\School Management System\School Management System\obj\Debug\School Management System.csproj.SuggestedBindingRedirects.cache
-C:\Users\USER\Source\Repos\nDm-786\School-Management-System\School Management System\School Management System\obj\Debug\School Management System.exe.config
-C:\Users\USER\Source\Repos\nDm-786\School-Management-System\School Management System\School Management System\obj\Debug\School_Management_System.AdminPortal.resources
-C:\Users\USER\Source\Repos\nDm-786\School-Management-System\School Management System\School Management System\obj\Debug\School_Management_System.Form1.resources
-C:\Users\USER\Source\Repos\nDm-786\School-Management-System\School Management System\School Management System\obj\Debug\School_Management_System.Properties.Resources.resources
-C:\Users\USER\Source\Repos\nDm-786\School-Management-System\School Management System\School Management System\obj\Debug\School Management System.csproj.GenerateResource.cache
-C:\Users\USER\Source\Repos\nDm-786\School-Management-System\School Management System\School Management System\obj\Debug\School Management System.exe.licenses
-C:\Users\USER\Source\Repos\nDm-786\School-Management-System\School Management System\School Management System\obj\Debug\School Management System.csproj.CoreCompileInputs.cache
-C:\Users\USER\Source\Repos\nDm-786\School-Management-System\School Management System\School Management System\obj\Debug\School Management System.csproj.Fody.CopyLocal.cache
-C:\Users\USER\Source\Repos\nDm-786\School-Management-System\School Management System\School Management System\obj\Debug\School Management System.csproj.CopyComplete
-C:\Users\USER\Source\Repos\nDm-786\School-Management-System\School Management System\School Management System\obj\Debug\School Management System.exe
-C:\Users\USER\Source\Repos\nDm-786\School-Management-System\School Management System\School Management System\obj\Debug\School Management System.pdb
 C:\Users\pc\Source\Repos\nDm-786\School-Management-System\School Management System\School Management System\bin\Debug\School Management System.exe.config
 C:\Users\pc\Source\Repos\nDm-786\School-Management-System\School Management System\School Management System\bin\Debug\School Management System.exe
 C:\Users\pc\Source\Repos\nDm-786\School-Management-System\School Management System\School Management System\bin\Debug\School Management System.pdb
@@ -139,3 +92,50 @@ C:\Users\pc\Source\Repos\nDm-786\School-Management-System\School Management Syst
 C:\Users\pc\Source\Repos\nDm-786\School-Management-System\School Management System\School Management System\obj\Debug\School Management System.csproj.CopyComplete
 C:\Users\pc\Source\Repos\nDm-786\School-Management-System\School Management System\School Management System\obj\Debug\School Management System.exe
 C:\Users\pc\Source\Repos\nDm-786\School-Management-System\School Management System\School Management System\obj\Debug\School Management System.pdb
+C:\Users\USER\Source\Repos\nDm-786\School-Management-System\School Management System\School Management System\bin\Debug\School Management System.exe.config
+C:\Users\USER\Source\Repos\nDm-786\School-Management-System\School Management System\School Management System\bin\Debug\School Management System.exe
+C:\Users\USER\Source\Repos\nDm-786\School-Management-System\School Management System\School Management System\bin\Debug\School Management System.pdb
+C:\Users\USER\Source\Repos\nDm-786\School-Management-System\School Management System\School Management System\bin\Debug\Microsoft.Win32.Registry.xml
+C:\Users\USER\Source\Repos\nDm-786\School-Management-System\School Management System\School Management System\bin\Debug\Microsoft.Win32.Registry.AccessControl.xml
+C:\Users\USER\Source\Repos\nDm-786\School-Management-System\School Management System\School Management System\bin\Debug\Microsoft.Win32.SystemEvents.xml
+C:\Users\USER\Source\Repos\nDm-786\School-Management-System\School Management System\School Management System\bin\Debug\Newtonsoft.Json.xml
+C:\Users\USER\Source\Repos\nDm-786\School-Management-System\School Management System\School Management System\bin\Debug\RestSharp.xml
+C:\Users\USER\Source\Repos\nDm-786\School-Management-System\School Management System\School Management System\bin\Debug\System.Buffers.xml
+C:\Users\USER\Source\Repos\nDm-786\School-Management-System\School Management System\School Management System\bin\Debug\System.CodeDom.xml
+C:\Users\USER\Source\Repos\nDm-786\School-Management-System\School Management System\School Management System\bin\Debug\System.Configuration.ConfigurationManager.xml
+C:\Users\USER\Source\Repos\nDm-786\School-Management-System\School Management System\School Management System\bin\Debug\System.Data.Odbc.xml
+C:\Users\USER\Source\Repos\nDm-786\School-Management-System\School Management System\School Management System\bin\Debug\System.Data.OleDb.xml
+C:\Users\USER\Source\Repos\nDm-786\School-Management-System\School Management System\School Management System\bin\Debug\System.Data.SqlClient.xml
+C:\Users\USER\Source\Repos\nDm-786\School-Management-System\School Management System\School Management System\bin\Debug\System.Diagnostics.EventLog.xml
+C:\Users\USER\Source\Repos\nDm-786\School-Management-System\School Management System\School Management System\bin\Debug\System.Diagnostics.PerformanceCounter.xml
+C:\Users\USER\Source\Repos\nDm-786\School-Management-System\School Management System\School Management System\bin\Debug\System.Drawing.Common.xml
+C:\Users\USER\Source\Repos\nDm-786\School-Management-System\School Management System\School Management System\bin\Debug\System.IO.FileSystem.AccessControl.xml
+C:\Users\USER\Source\Repos\nDm-786\School-Management-System\School Management System\School Management System\bin\Debug\System.IO.Packaging.xml
+C:\Users\USER\Source\Repos\nDm-786\School-Management-System\School Management System\School Management System\bin\Debug\System.IO.Ports.xml
+C:\Users\USER\Source\Repos\nDm-786\School-Management-System\School Management System\School Management System\bin\Debug\System.Memory.xml
+C:\Users\USER\Source\Repos\nDm-786\School-Management-System\School Management System\School Management System\bin\Debug\System.Numerics.Vectors.xml
+C:\Users\USER\Source\Repos\nDm-786\School-Management-System\School Management System\School Management System\bin\Debug\System.Runtime.CompilerServices.Unsafe.xml
+C:\Users\USER\Source\Repos\nDm-786\School-Management-System\School Management System\School Management System\bin\Debug\System.Security.AccessControl.xml
+C:\Users\USER\Source\Repos\nDm-786\School-Management-System\School Management System\School Management System\bin\Debug\System.Security.Cryptography.Cng.xml
+C:\Users\USER\Source\Repos\nDm-786\School-Management-System\School Management System\School Management System\bin\Debug\System.Security.Cryptography.Pkcs.xml
+C:\Users\USER\Source\Repos\nDm-786\School-Management-System\School Management System\School Management System\bin\Debug\System.Security.Cryptography.ProtectedData.xml
+C:\Users\USER\Source\Repos\nDm-786\School-Management-System\School Management System\School Management System\bin\Debug\System.Security.Cryptography.Xml.xml
+C:\Users\USER\Source\Repos\nDm-786\School-Management-System\School Management System\School Management System\bin\Debug\System.Security.Permissions.xml
+C:\Users\USER\Source\Repos\nDm-786\School-Management-System\School Management System\School Management System\bin\Debug\System.Security.Principal.Windows.xml
+C:\Users\USER\Source\Repos\nDm-786\School-Management-System\School Management System\School Management System\bin\Debug\System.ServiceModel.Syndication.xml
+C:\Users\USER\Source\Repos\nDm-786\School-Management-System\School Management System\School Management System\bin\Debug\System.ServiceProcess.ServiceController.xml
+C:\Users\USER\Source\Repos\nDm-786\School-Management-System\School Management System\School Management System\bin\Debug\System.Text.Encoding.CodePages.xml
+C:\Users\USER\Source\Repos\nDm-786\School-Management-System\School Management System\School Management System\bin\Debug\System.Threading.AccessControl.xml
+C:\Users\USER\Source\Repos\nDm-786\School-Management-System\School Management System\School Management System\obj\Debug\School Management System.csproj.AssemblyReference.cache
+C:\Users\USER\Source\Repos\nDm-786\School-Management-System\School Management System\School Management System\obj\Debug\School Management System.csproj.SuggestedBindingRedirects.cache
+C:\Users\USER\Source\Repos\nDm-786\School-Management-System\School Management System\School Management System\obj\Debug\School Management System.exe.config
+C:\Users\USER\Source\Repos\nDm-786\School-Management-System\School Management System\School Management System\obj\Debug\School_Management_System.AdminPortal.resources
+C:\Users\USER\Source\Repos\nDm-786\School-Management-System\School Management System\School Management System\obj\Debug\School_Management_System.Form1.resources
+C:\Users\USER\Source\Repos\nDm-786\School-Management-System\School Management System\School Management System\obj\Debug\School_Management_System.Properties.Resources.resources
+C:\Users\USER\Source\Repos\nDm-786\School-Management-System\School Management System\School Management System\obj\Debug\School Management System.csproj.GenerateResource.cache
+C:\Users\USER\Source\Repos\nDm-786\School-Management-System\School Management System\School Management System\obj\Debug\School Management System.exe.licenses
+C:\Users\USER\Source\Repos\nDm-786\School-Management-System\School Management System\School Management System\obj\Debug\School Management System.csproj.CoreCompileInputs.cache
+C:\Users\USER\Source\Repos\nDm-786\School-Management-System\School Management System\School Management System\obj\Debug\School Management System.csproj.Fody.CopyLocal.cache
+C:\Users\USER\Source\Repos\nDm-786\School-Management-System\School Management System\School Management System\obj\Debug\School Management System.csproj.CopyComplete
+C:\Users\USER\Source\Repos\nDm-786\School-Management-System\School Management System\School Management System\obj\Debug\School Management System.exe
+C:\Users\USER\Source\Repos\nDm-786\School-Management-System\School Management System\School Management System\obj\Debug\School Management System.pdb
