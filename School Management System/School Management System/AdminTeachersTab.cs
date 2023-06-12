@@ -33,5 +33,12 @@ namespace School_Management_System
             ads.Show();
             this.Hide();
         }
+
+        private void StudentTab_Click(object sender, EventArgs e)
+        {
+            AdminStudentTab ads = new AdminStudentTab();
+            ads.Show();
+            this.Hide();
+        }
     }
 }
