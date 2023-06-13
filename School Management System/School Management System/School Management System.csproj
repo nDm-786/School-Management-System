@@ -230,6 +230,12 @@
     <Reference Include="WindowsBase" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="AdminCoursesTab.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AdminCoursesTab.Designer.cs">
+      <DependentUpon>AdminCoursesTab.cs</DependentUpon>
+    </Compile>
     <Compile Include="AdminStudentTab.cs">
       <SubType>Form</SubType>
     </Compile>
