@@ -54,3 +54,66 @@ BEGIN
     SELECT *
     FROM Subjects
 END
+
+---6. AddStudent:
+ 
+CREATE PROCEDURE AddStudent
+    @StudentID INT,
+    @Name VARCHAR(50),
+    @Age INT,
+    @Phone VARCHAR(10),
+    @Address VARCHAR(20),
+    @Gender VARCHAR(10),
+    @ClassID INT
+AS
+BEGIN
+    INSERT INTO Students (StudentID, Name, Age, Phone, Address, Gender, ClassID)
+    VALUES (@StudentID, @Name, @Age, @Phone, @Address, @Gender, @ClassID)
+END
+  
+
+--7. UpdateStudent:
+ 
+CREATE PROCEDURE UpdateStudent
+    @StudentID INT,
+    @Name VARCHAR(50),
+    @Age INT,
+    @Phone VARCHAR(10),
+    @Address VARCHAR(20),
+    @Gender VARCHAR(10),
+    @ClassID INT
+AS
+BEGIN
+    UPDATE Students
+    SET Name = @Name,
+        Age = @Age,
+        Phone = @Phone,
+        Address = @Address,
+        Gender = @Gender,
+        ClassID = @ClassID
+    WHERE StudentID = @StudentID
+END
+  
+
+--8. DeleteStudent:
+ 
+CREATE PROCEDURE DeleteStudent
+    @StudentID INT
+AS
+BEGIN
+    DELETE FROM Students
+    WHERE StudentID = @StudentID
+END
+  
+
+--9. GetStudentByID:
+ 
+CREATE PROCEDURE GetStudentByID
+    @StudentID INT
+AS
+BEGIN
+    SELECT *
+    FROM Students
+    WHERE StudentID = @StudentID
+END
+
