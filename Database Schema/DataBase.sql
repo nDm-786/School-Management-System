@@ -1,6 +1,4 @@
-﻿Create database SMS
-
--- Table for subjects
+﻿-- Table for subjects
 CREATE TABLE Subjects (
     SubjectID INT PRIMARY KEY,
     Name VARCHAR(50)
@@ -17,8 +15,9 @@ CREATE TABLE Employees (
     EmployeeID INT PRIMARY KEY,
     Name VARCHAR(50),
     Age INT,
-    Gender VARCHAR(10),
-    Position VARCHAR(50),
+	Phone varchar(10),
+	Adress varchar(20),
+    Gender VARCHAR(10),    
     RoleID INT,
     FOREIGN KEY (RoleID) REFERENCES Roles(RoleID)
 );
@@ -27,10 +26,9 @@ CREATE TABLE Employees (
 CREATE TABLE Teachers (
     TeacherID INT PRIMARY KEY,
     Name VARCHAR(50),
-	EmployeeID INT,
-    Age INT,
-    Gender VARCHAR(10),
-    Subject VARCHAR(50),
+	EmployeeID INT,    
+    SubjectID int,     
+	FOREIGN KEY (SubjectID) REFERENCES Subjects(SubjectID),
     FOREIGN KEY (EmployeeID) REFERENCES Employees(EmployeeID)
 );
 -- Table for time table
@@ -39,8 +37,8 @@ CREATE TABLE TimeTables (
     DayOfWeek VARCHAR(20),
     StartTime TIME,
     EndTime TIME,
-    Subject VARCHAR(50),
-    
+    SubjectID int,     
+	FOREIGN KEY (SubjectID) REFERENCES Subjects(SubjectID),
 );
 -- Table for classes
 CREATE TABLE Classes (
@@ -59,6 +57,8 @@ CREATE TABLE Students (
     StudentID INT PRIMARY KEY,
     Name VARCHAR(50),
     Age INT,
+	Phone varchar(10),
+	Adress varchar(20),
     Gender VARCHAR(10),
     ClassID INT,
     FOREIGN KEY (ClassID) REFERENCES Classes(ClassID)
@@ -68,10 +68,7 @@ CREATE TABLE Students (
 CREATE TABLE Staff (
     StaffID INT PRIMARY KEY,
     Name VARCHAR(50),
-	EmployeeID INT,
-    Age INT,
-    Gender VARCHAR(10),
-    Position VARCHAR(50),
+	EmployeeID INT,    
 	FOREIGN KEY (EmployeeID) REFERENCES Employees(EmployeeID)
 
 );
@@ -80,10 +77,7 @@ CREATE TABLE Staff (
 CREATE TABLE Admins (
     AdminID INT PRIMARY KEY,
     Name VARCHAR(50),
-	EmployeeID INT,
-    Age INT,
-    Gender VARCHAR(10),
-    Role VARCHAR(50),
+	EmployeeID INT,   
 	FOREIGN KEY (EmployeeID) REFERENCES Employees(EmployeeID)
 
 );
@@ -96,8 +90,19 @@ CREATE TABLE Exams (
     Name VARCHAR(50),
     Date DATE,
     ClassID INT,
-    Subject VARCHAR(50),
     FOREIGN KEY (ClassID) REFERENCES Classes(ClassID)
+);
+
+-- Table for examResults
+create table ExamResults(
+    ExamID int primary key,
+    StudentID int,
+    ClassID int,
+    SubjectID int,
+    Marks int
+    foreign key (StudentID) references Students(StudentID),
+    foreign key (ClassID) references Classes(ClassID),
+    foreign key (SubjectID) references Subjects(SubjectID)
 );
 
 
@@ -111,7 +116,7 @@ CREATE TABLE Accounts (
 );
 
 
--- Table for attendance
+-- Table for student attendance
 CREATE TABLE Std_Attendance (
     AttendanceID INT PRIMARY KEY,
     StudentID INT,
@@ -122,7 +127,7 @@ CREATE TABLE Std_Attendance (
     FOREIGN KEY (ClassID) REFERENCES Classes(ClassID)
 );
 
--- Table for attendance
+-- Table for Emp attendance
 CREATE TABLE Emp_Attendance (
     AttendanceID INT PRIMARY KEY,
     EmployeeID INT,
@@ -131,3 +136,5 @@ CREATE TABLE Emp_Attendance (
     Status VARCHAR(10),
     FOREIGN KEY (EmployeeID) REFERENCES Employees(EmployeeID)
 );
+
+
