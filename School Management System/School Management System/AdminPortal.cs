@@ -21,5 +21,10 @@ namespace School_Management_System
         {
 
         }
+
+        private void AdminPortal_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }
