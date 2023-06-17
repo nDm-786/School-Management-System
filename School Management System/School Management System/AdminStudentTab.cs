@@ -9,6 +9,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using System.Data.SqlClient;
+using System.Configuration;
 using System.Web.UI.WebControls;
 using System.Net;
 using System.Xml.Linq;
@@ -22,7 +23,7 @@ namespace School_Management_System
             InitializeComponent();
         }
 
-        SqlConnection con = new SqlConnection("Data Source=DESKTOP-38NRAVC\\ALISERVER;Initial Catalog=SMS;Integrated Security=True");
+        readonly SqlConnection con = new SqlConnection(System.Configuration.ConfigurationManager.ConnectionStrings["dbcs"].ConnectionString);
 
         private void LogoutTab_Click(object sender, EventArgs e)
         {
@@ -36,14 +37,14 @@ namespace School_Management_System
 
         private void TeachersTab_Click(object sender, EventArgs e)
         {
-            AdminTeachersTab adt=new AdminTeachersTab();
+            AdminEmployeesTab adt=new AdminEmployeesTab();
             adt.Show();
             this.Hide();
         }
 
         private void TeacherTab_Click(object sender, EventArgs e)
         {
-            AdminTeachersTab adt = new AdminTeachersTab();
+            AdminEmployeesTab adt = new AdminEmployeesTab();
             adt.Show();
             this.Hide();
         }
