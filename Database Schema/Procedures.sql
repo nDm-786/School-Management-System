@@ -55,55 +55,46 @@
 --    FROM Subjects
 --END
 
------6. AddStudent:
+----6. AddStudent:
  
---CREATE PROCEDURE AddStudent
+--CREATE PROCEDURE CreateStudent (
 --    @StudentID INT,
 --    @Name VARCHAR(50),
---    @Age INT,
 --    @Phone VARCHAR(10),
---    @Address VARCHAR(20),
---    @Gender VARCHAR(10),
---    @ClassID INT
+--    @Address VARCHAR(20)
+--)
 --AS
 --BEGIN
---    INSERT INTO Students (StudentID, Name, Age, Phone, Address, Gender, ClassID)
---    VALUES (@StudentID, @Name, @Age, @Phone, @Address, @Gender, @ClassID)
---END
-  
+--    INSERT INTO Students (StudentID, Name,  Phone, Adress)
+--    VALUES (@StudentID, @Name, @Phone, @Address);
+--END;
 
 ----7. UpdateStudent:
  
---CREATE PROCEDURE UpdateStudent
+--CREATE PROCEDURE UpdateStudent (
 --    @StudentID INT,
 --    @Name VARCHAR(50),
---    @Age INT,
 --    @Phone VARCHAR(10),
---    @Address VARCHAR(20),
---    @Gender VARCHAR(10),
---    @ClassID INT
+--    @Address VARCHAR(20)
+    
+--)
 --AS
 --BEGIN
 --    UPDATE Students
---    SET Name = @Name,
---        Age = @Age,
---        Phone = @Phone,
---        Address = @Address,
---        Gender = @Gender,
---        ClassID = @ClassID
---    WHERE StudentID = @StudentID
---END
-  
+--    SET Name = @Name,  Phone = @Phone, Adress = @Address 
+--    WHERE StudentID = @StudentID;
+--END;
 
 ----8. DeleteStudent:
  
---CREATE PROCEDURE DeleteStudent
+--CREATE PROCEDURE DeleteStudent (
 --    @StudentID INT
+--)
 --AS
 --BEGIN
 --    DELETE FROM Students
---    WHERE StudentID = @StudentID
---END
+--    WHERE StudentID = @StudentID;
+--END;
   
 
 ----9. GetStudentByID:
