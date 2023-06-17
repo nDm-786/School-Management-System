@@ -1,0 +1,8 @@
+C:\Users\Mr. Bhatti\source\repos\nDm-786\School-Management-System\SDAOEL2NDM\SDAOEL2NDM\bin\Debug\SDAOEL2NDM.exe.config
+C:\Users\Mr. Bhatti\source\repos\nDm-786\School-Management-System\SDAOEL2NDM\SDAOEL2NDM\bin\Debug\SDAOEL2NDM.exe
+C:\Users\Mr. Bhatti\source\repos\nDm-786\School-Management-System\SDAOEL2NDM\SDAOEL2NDM\bin\Debug\SDAOEL2NDM.pdb
+C:\Users\Mr. Bhatti\source\repos\nDm-786\School-Management-System\SDAOEL2NDM\SDAOEL2NDM\obj\Debug\SDAOEL2NDM.csproj.AssemblyReference.cache
+C:\Users\Mr. Bhatti\source\repos\nDm-786\School-Management-System\SDAOEL2NDM\SDAOEL2NDM\obj\Debug\SDAOEL2NDM.csproj.SuggestedBindingRedirects.cache
+C:\Users\Mr. Bhatti\source\repos\nDm-786\School-Management-System\SDAOEL2NDM\SDAOEL2NDM\obj\Debug\SDAOEL2NDM.csproj.CoreCompileInputs.cache
+C:\Users\Mr. Bhatti\source\repos\nDm-786\School-Management-System\SDAOEL2NDM\SDAOEL2NDM\obj\Debug\SDAOEL2NDM.exe
+C:\Users\Mr. Bhatti\source\repos\nDm-786\School-Management-System\SDAOEL2NDM\SDAOEL2NDM\obj\Debug\SDAOEL2NDM.pdb
