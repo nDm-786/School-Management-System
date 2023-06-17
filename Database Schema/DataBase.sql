@@ -19,7 +19,7 @@ CREATE TABLE Employees (
 	Adress varchar(20),
     Gender VARCHAR(10),    
     RoleID INT,
-	Password Int;
+	Password Int,
     FOREIGN KEY (RoleID) REFERENCES Roles(RoleID)
 );
 
@@ -61,7 +61,7 @@ CREATE TABLE Students (
 	Phone varchar(10),
 	Adress varchar(20),
     Gender VARCHAR(10),
-	Password Int;
+	Password Int,
     ClassID INT,
     FOREIGN KEY (ClassID) REFERENCES Classes(ClassID)
 );
