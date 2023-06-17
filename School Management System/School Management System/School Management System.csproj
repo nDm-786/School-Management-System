@@ -230,6 +230,12 @@
     <Reference Include="WindowsBase" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="AdminDashboardTab.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AdminDashboardTab.Designer.cs">
+      <DependentUpon>AdminDashboardTab.cs</DependentUpon>
+    </Compile>
     <Compile Include="AdminMDI.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -274,6 +280,9 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="AdminDashboardTab.resx">
+      <DependentUpon>AdminDashboardTab.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="AdminExamsTab.resx">
       <DependentUpon>AdminExamsTab.cs</DependentUpon>
     </EmbeddedResource>
