@@ -127,8 +127,6 @@ C:\Users\USER\Source\Repos\nDm-786\School-Management-System\School Management Sy
 C:\Users\USER\Source\Repos\nDm-786\School-Management-System\School Management System\School Management System\obj\Debug\School Management System.csproj.AssemblyReference.cache
 C:\Users\USER\Source\Repos\nDm-786\School-Management-System\School Management System\School Management System\obj\Debug\School Management System.csproj.SuggestedBindingRedirects.cache
 C:\Users\USER\Source\Repos\nDm-786\School-Management-System\School Management System\School Management System\obj\Debug\School Management System.exe.config
-C:\Users\USER\Source\Repos\nDm-786\School-Management-System\School Management System\School Management System\obj\Debug\School_Management_System.AdminPortal.resources
-C:\Users\USER\Source\Repos\nDm-786\School-Management-System\School Management System\School Management System\obj\Debug\School_Management_System.Form1.resources
 C:\Users\USER\Source\Repos\nDm-786\School-Management-System\School Management System\School Management System\obj\Debug\School_Management_System.Properties.Resources.resources
 C:\Users\USER\Source\Repos\nDm-786\School-Management-System\School Management System\School Management System\obj\Debug\School Management System.csproj.GenerateResource.cache
 C:\Users\USER\Source\Repos\nDm-786\School-Management-System\School Management System\School Management System\obj\Debug\School Management System.exe.licenses
@@ -144,3 +142,10 @@ C:\Users\Mr. Bhatti\source\repos\nDm-786\School-Management-System\School Managem
 C:\Users\Mr. Bhatti\source\repos\nDm-786\School-Management-System\School Management System\School Management System\obj\Debug\School_Management_System.AdminMDI.resources
 C:\Users\Mr. Bhatti\source\repos\nDm-786\School-Management-System\School Management System\School Management System\obj\Debug\School_Management_System.AdminStudents.resources
 C:\Users\Mr. Bhatti\source\repos\nDm-786\School-Management-System\School Management System\School Management System\obj\Debug\School_Management_System.AdminTimeTableTab.resources
+C:\Users\USER\Source\Repos\nDm-786\School-Management-System\School Management System\School Management System\obj\Debug\School_Management_System.AdminExamsTab.resources
+C:\Users\USER\Source\Repos\nDm-786\School-Management-System\School Management System\School Management System\obj\Debug\School_Management_System.AdminMDI.resources
+C:\Users\USER\Source\Repos\nDm-786\School-Management-System\School Management System\School Management System\obj\Debug\School_Management_System.AdminStudents.resources
+C:\Users\USER\Source\Repos\nDm-786\School-Management-System\School Management System\School Management System\obj\Debug\School_Management_System.AdminTimeTableTab.resources
+C:\Users\USER\Source\Repos\nDm-786\School-Management-System\School Management System\School Management System\obj\Debug\School_Management_System.AdminStudentTab.resources
+C:\Users\USER\Source\Repos\nDm-786\School-Management-System\School Management System\School Management System\obj\Debug\School_Management_System.AdminTeachersTab.resources
+C:\Users\USER\Source\Repos\nDm-786\School-Management-System\School Management System\School Management System\obj\Debug\School_Management_System.SignIn.resources
