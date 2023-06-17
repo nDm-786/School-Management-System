@@ -48,10 +48,21 @@ namespace School_Management_System
             adt.Show();
             this.Hide();
         }
-
+        int key = 0;
         private void DataGrid_CellContentClick(object sender, DataGridViewCellEventArgs e)
         {
-
+            IDTxt.Text = DataGrid.SelectedRows[0].Cells[0].Value.ToString();
+            NameTxt.Text = DataGrid.SelectedRows[0].Cells[1].Value.ToString();
+            PhoneTxt.Text = DataGrid.SelectedRows[0].Cells[2].Value.ToString();
+            AddressTxt.Text = DataGrid.SelectedRows[0].Cells[3].Value.ToString();
+            if (NameTxt.Text == "")
+            {
+                key = 0;
+            }
+            else
+            {
+                key = Convert.ToInt32(DataGrid.SelectedRows[0].Cells[0].Value.ToString());
+            }
         }
 
         private void AdminStudentTab_Load(object sender, EventArgs e)
@@ -85,7 +96,7 @@ namespace School_Management_System
             using (SqlCommand command = new SqlCommand("CreateStudent", con))
             {
                 command.CommandType = System.Data.CommandType.StoredProcedure;
-                command.Parameters.AddWithValue("@StudentID", IDTxt.Text);
+                //command.Parameters.AddWithValue("@StudentID", IDTxt.Text);
                 command.Parameters.AddWithValue("@Name", NameTxt.Text);
                 command.Parameters.AddWithValue("@Phone", PhoneTxt.Text);
                 command.Parameters.AddWithValue("@Address", AddressTxt.Text);
@@ -126,6 +137,11 @@ namespace School_Management_System
                 LoadStudent();
                 clearFields();
             }
+        }
+
+        private void ResetBtn_Click(object sender, EventArgs e)
+        {
+            clearFields();
         }
 
         //private void panel1_Paint(object sender, PaintEventArgs e)
