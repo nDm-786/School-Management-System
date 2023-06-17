@@ -140,3 +140,7 @@ C:\Users\USER\Source\Repos\nDm-786\School-Management-System\School Management Sy
 C:\Users\Mr. Bhatti\source\repos\nDm-786\School-Management-System\School Management System\School Management System\obj\Debug\School_Management_System.AdminStudentTab.resources
 C:\Users\Mr. Bhatti\source\repos\nDm-786\School-Management-System\School Management System\School Management System\obj\Debug\School_Management_System.AdminTeachersTab.resources
 C:\Users\Mr. Bhatti\source\repos\nDm-786\School-Management-System\School Management System\School Management System\obj\Debug\School_Management_System.SignIn.resources
+C:\Users\Mr. Bhatti\source\repos\nDm-786\School-Management-System\School Management System\School Management System\obj\Debug\School_Management_System.AdminExamsTab.resources
+C:\Users\Mr. Bhatti\source\repos\nDm-786\School-Management-System\School Management System\School Management System\obj\Debug\School_Management_System.AdminMDI.resources
+C:\Users\Mr. Bhatti\source\repos\nDm-786\School-Management-System\School Management System\School Management System\obj\Debug\School_Management_System.AdminStudents.resources
+C:\Users\Mr. Bhatti\source\repos\nDm-786\School-Management-System\School Management System\School Management System\obj\Debug\School_Management_System.AdminTimeTableTab.resources
