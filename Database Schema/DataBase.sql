@@ -19,6 +19,7 @@ CREATE TABLE Employees (
 	Adress varchar(20),
     Gender VARCHAR(10),    
     RoleID INT,
+	Password Int;
     FOREIGN KEY (RoleID) REFERENCES Roles(RoleID)
 );
 
@@ -60,6 +61,7 @@ CREATE TABLE Students (
 	Phone varchar(10),
 	Adress varchar(20),
     Gender VARCHAR(10),
+	Password Int;
     ClassID INT,
     FOREIGN KEY (ClassID) REFERENCES Classes(ClassID)
 );
@@ -78,6 +80,7 @@ CREATE TABLE Admins (
     AdminID INT PRIMARY KEY,
     Name VARCHAR(50),
 	EmployeeID INT,   
+	Password INT,
 	FOREIGN KEY (EmployeeID) REFERENCES Employees(EmployeeID)
 
 );
