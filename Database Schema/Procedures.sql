@@ -64,7 +64,7 @@ alter PROCEDURE CreateStudent (
 )
 AS
 BEGIN
-    INSERT INTO Students (Name,  Phone, Address)
+    INSERT INTO Students (Name,  Phone, Adress)
     VALUES (@Name, @Phone, @Address);
 END;
 
@@ -113,6 +113,43 @@ begin
 select StudentID,Name,Phone,Address, ClassID from Students
 end
 
+-- create teacher
+
+create PROCEDURE CreateTeacher (
+    @Name VARCHAR(50),
+    @Phone VARCHAR(10),
+    @Address VARCHAR(20)
+)
+AS
+BEGIN
+    INSERT INTO Employees(Name,  Phone, Address)
+    VALUES (@Name, @Phone, @Address);
+END;
+
+--update teacher 
+Create PROCEDURE UpdateTeacher (
+    @EmployeeID INT,
+    @Name VARCHAR(50),
+    @Phone VARCHAR(10),
+    @Address VARCHAR(20)
+    
+)
+AS
+BEGIN
+    UPDATE Employees
+    SET Name = @Name,  Phone = @Phone, Address = @Address 
+    WHERE EmployeeID = @EmployeeID;
+END;
+
+-- delete teacher
+CREATE PROCEDURE DeleteTeacher (
+    @EmployeeID INT
+)
+AS
+BEGIN
+    DELETE FROM Employees
+    WHERE EmployeeID = @EmployeeID;
+END;
 -- DUMMY DATA OF 10 STUDENTS
 INSERT INTO Students (Name, Age, Phone, Address, Gender, Password)
 VALUES

@@ -33,8 +33,8 @@ namespace School_Management_System
             //con = new SqlConnection(connectionString);
         }
 
-        readonly SqlConnection con = new SqlConnection(System.Configuration.ConfigurationManager.ConnectionStrings["dbcs"].ConnectionString);
-
+        //readonly SqlConnection con = new SqlConnection(System.Configuration.ConfigurationManager.ConnectionStrings["dbcs"].ConnectionString);
+      SqlConnection  con = new SqlConnection("Data Source=DESKTOP-38NRAVC\\ALISERVER;Initial Catalog=SMS;Integrated Security=True");
         private void LogoutTab_Click(object sender, EventArgs e)
         {
             Application.Exit();
@@ -47,11 +47,11 @@ namespace School_Management_System
 
         private void TeachersTab_Click(object sender, EventArgs e)
         {
-<<<<<<< HEAD
-            AdminTeachersTab adt = new AdminTeachersTab();
-=======
+// HEAD
+            //AdminTeachersTab adt = new AdminTeachersTab();
+//
             AdminEmployeesTab adt=new AdminEmployeesTab();
->>>>>>> 5746d54abf6e1cdade2c127bc48f96ac81e45cfe
+// 5746d54abf6e1cdade2c127bc48f96ac81e45cfe
             adt.Show();
             this.Hide();
         }

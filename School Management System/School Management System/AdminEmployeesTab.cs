@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
+using System.Data.SqlClient;
 using System.Drawing;
 using System.Linq;
 using System.Text;
@@ -16,6 +17,7 @@ namespace School_Management_System
         {
             InitializeComponent();
         }
+        SqlConnection con = new SqlConnection("Data Source=DESKTOP-38NRAVC\\ALISERVER;Initial Catalog=SMS;Integrated Security=True");
 
         private void LogoutTab_Click(object sender, EventArgs e)
         {
@@ -39,6 +41,78 @@ namespace School_Management_System
             AdminStudentTab ads = new AdminStudentTab();
             ads.Show();
             this.Hide();
+        }
+
+        private void AdminEmployeesTab_Load(object sender, EventArgs e)
+        {
+            showEmployee();
+        }
+        private void showEmployee()
+        {
+            string querry = "exec GetTeachers";
+            SqlCommand cmd = new SqlCommand(querry, con);
+            SqlDataAdapter sd = new SqlDataAdapter(cmd);
+            DataTable dt = new DataTable();
+            sd.Fill(dt);
+            DataGrid.DataSource = dt;
+
+        }
+        private void clearFields()
+        {
+
+            IDTxt.Text = "";
+            NameTxt.Text = "";
+            PhoneTxt.Text = "";
+            AddressTxt.Text = "";
+        }
+
+        private void AddBtn_Click(object sender, EventArgs e)
+        {
+            con.Open();
+            using (SqlCommand command = new SqlCommand("CreateTeacher", con))
+            {
+                command.CommandType = System.Data.CommandType.StoredProcedure;
+                command.Parameters.AddWithValue("@StudentID", IDTxt.Text);
+                command.Parameters.AddWithValue("@Name", NameTxt.Text);
+                command.Parameters.AddWithValue("@Phone", PhoneTxt.Text);
+                command.Parameters.AddWithValue("@Address", AddressTxt.Text);
+                command.ExecuteNonQuery();
+                con.Close();
+                showEmployee();
+                clearFields();
+
+            }
+        }
+
+        private void DeleteBtn_Click(object sender, EventArgs e)
+        {
+            con.Open();
+            using (SqlCommand command = new SqlCommand("DeleteTeacher", con))
+            {
+                command.CommandType = System.Data.CommandType.StoredProcedure;
+                command.Parameters.AddWithValue("@StudentID", IDTxt.Text);
+                command.ExecuteNonQuery();
+                con.Close();
+                showEmployee();
+                clearFields();
+            }
+        }
+
+        private void UpdateBtn_Click(object sender, EventArgs e)
+        {
+            con.Open();
+            using (SqlCommand command = new SqlCommand("UpdateTeacher", con))
+            {
+                command.CommandType = System.Data.CommandType.StoredProcedure;
+                command.Parameters.AddWithValue("@StudentID", IDTxt.Text);
+                command.Parameters.AddWithValue("@Name", NameTxt.Text);
+                command.Parameters.AddWithValue("@Phone", PhoneTxt.Text);
+                command.Parameters.AddWithValue("@Address", AddressTxt.Text);
+                command.ExecuteNonQuery();
+                con.Close();
+                showEmployee();
+                clearFields();
+            }
         }
     }
 }
