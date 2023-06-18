@@ -13,18 +13,28 @@ using System.Configuration;
 using System.Web.UI.WebControls;
 using System.Net;
 using System.Xml.Linq;
+using System.Configuration;
+using System.Runtime.Serialization.Formatters;
+
+// ...
+
 
 namespace School_Management_System
 {
     public partial class AdminStudentTab : Form
     {
+        //private readonly string  connectionString;
+        //private readonly SqlConnection con;
         public AdminStudentTab()
         {
+          
             InitializeComponent();
+            //connectionString = ConfigurationManager.ConnectionStrings["dbcs"].ConnectionString;
+            //con = new SqlConnection(connectionString);
         }
 
-        readonly SqlConnection con = new SqlConnection(System.Configuration.ConfigurationManager.ConnectionStrings["dbcs"].ConnectionString);
-
+        //readonly SqlConnection con = new SqlConnection(System.Configuration.ConfigurationManager.ConnectionStrings["dbcs"].ConnectionString);
+      SqlConnection  con = new SqlConnection("Data Source=DESKTOP-38NRAVC\\ALISERVER;Initial Catalog=SMS;Integrated Security=True");
         private void LogoutTab_Click(object sender, EventArgs e)
         {
             Application.Exit();
@@ -37,7 +47,11 @@ namespace School_Management_System
 
         private void TeachersTab_Click(object sender, EventArgs e)
         {
+// HEAD
+            //AdminTeachersTab adt = new AdminTeachersTab();
+//
             AdminEmployeesTab adt=new AdminEmployeesTab();
+// 5746d54abf6e1cdade2c127bc48f96ac81e45cfe
             adt.Show();
             this.Hide();
         }
@@ -78,7 +92,7 @@ namespace School_Management_System
             DataTable dt = new DataTable();
             sd.Fill(dt);
             DataGrid.DataSource = dt;
-           
+
         }
 
         private void clearFields()

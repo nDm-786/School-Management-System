@@ -16,5 +16,10 @@ namespace School_Management_System
         {
             InitializeComponent();
         }
+
+        private void AdminStudents_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }

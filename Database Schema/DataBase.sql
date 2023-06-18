@@ -25,7 +25,7 @@ CREATE TABLE Employees (
 
 -- Table for teachers
 CREATE TABLE Teachers (
-    TeacherID INT PRIMARY KEY,
+    TeacherID INT PRIMARY KEY ,
     Name VARCHAR(50),
 	EmployeeID INT,    
     SubjectID int,     
