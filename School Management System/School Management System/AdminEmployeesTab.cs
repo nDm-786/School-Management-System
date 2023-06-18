@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace School_Management_System
 {
-    public partial class AdminTeachersTab : Form
+    public partial class AdminEmployeesTab : Form
     {
-        public AdminTeachersTab()
+        public AdminEmployeesTab()
         {
             InitializeComponent();
         }

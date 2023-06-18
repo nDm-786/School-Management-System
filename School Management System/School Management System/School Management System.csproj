@@ -230,6 +230,18 @@
     <Reference Include="WindowsBase" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="AdminDashboardTab.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AdminDashboardTab.Designer.cs">
+      <DependentUpon>AdminDashboardTab.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AdminEmployeesTab.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AdminEmployeesTab.Designer.cs">
+      <DependentUpon>AdminEmployeesTab.cs</DependentUpon>
+    </Compile>
     <Compile Include="AdminMDI.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -260,12 +272,6 @@
     <Compile Include="AdminStudentTab.Designer.cs">
       <DependentUpon>AdminStudentTab.cs</DependentUpon>
     </Compile>
-    <Compile Include="AdminTeachersTab.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="AdminTeachersTab.Designer.cs">
-      <DependentUpon>AdminTeachersTab.cs</DependentUpon>
-    </Compile>
     <Compile Include="SignIn.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -274,6 +280,12 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="AdminDashboardTab.resx">
+      <DependentUpon>AdminDashboardTab.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AdminEmployeesTab.resx">
+      <DependentUpon>AdminEmployeesTab.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="AdminExamsTab.resx">
       <DependentUpon>AdminExamsTab.cs</DependentUpon>
     </EmbeddedResource>
@@ -288,9 +300,6 @@
     </EmbeddedResource>
     <EmbeddedResource Include="AdminStudentTab.resx">
       <DependentUpon>AdminStudentTab.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="AdminTeachersTab.resx">
-      <DependentUpon>AdminTeachersTab.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="SignIn.resx">
       <DependentUpon>SignIn.cs</DependentUpon>

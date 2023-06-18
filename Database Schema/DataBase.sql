@@ -16,7 +16,7 @@ CREATE TABLE Employees (
     Name VARCHAR(50),
     Age INT,
 	Phone varchar(10),
-	Adress varchar(20),
+	Address varchar(20),
     Gender VARCHAR(10),    
     RoleID INT,
 	Password Int,
@@ -55,16 +55,17 @@ CREATE TABLE Classes (
 
 -- Table for students
 CREATE TABLE Students (
-    StudentID INT PRIMARY KEY,
+    StudentID INT PRIMARY KEY IDENTITY(10000,1),
     Name VARCHAR(50),
     Age INT,
 	Phone varchar(10),
-	Adress varchar(20),
+	Address varchar(20),
     Gender VARCHAR(10),
 	Password Int,
     ClassID INT,
     FOREIGN KEY (ClassID) REFERENCES Classes(ClassID)
 );
+
 
 -- Table for staff
 CREATE TABLE Staff (
