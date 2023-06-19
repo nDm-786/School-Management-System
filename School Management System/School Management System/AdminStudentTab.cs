@@ -106,20 +106,8 @@ namespace School_Management_System
 
         private void AddBtn_Click(object sender, EventArgs e)
         {
-            con.Open();
-            using (SqlCommand command = new SqlCommand("CreateStudent", con))
-            {
-                command.CommandType = System.Data.CommandType.StoredProcedure;
-                //command.Parameters.AddWithValue("@StudentID", IDTxt.Text);
-                command.Parameters.AddWithValue("@Name", NameTxt.Text);
-                command.Parameters.AddWithValue("@Phone", PhoneTxt.Text);
-                command.Parameters.AddWithValue("@Address", AddressTxt.Text);
-                command.ExecuteNonQuery();
-                con.Close();
-                LoadStudent();
-                clearFields();
-
-            }
+            AdminStudentAdd adminStudentAdd = new AdminStudentAdd();
+            adminStudentAdd.Show();
         }
 
         private void UpdateBtn_Click(object sender, EventArgs e)

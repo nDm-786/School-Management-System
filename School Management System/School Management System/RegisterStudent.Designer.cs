@@ -30,6 +30,7 @@
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(RegisterStudent));
             this.panel1 = new System.Windows.Forms.Panel();
+            this.label9 = new System.Windows.Forms.Label();
             this.VerifyTxt = new System.Windows.Forms.Label();
             this.HumanVerification = new Bunifu.UI.WinForms.BunifuHSlider();
             this.GenderTxt = new Guna.UI2.WinForms.Guna2ComboBox();
@@ -49,7 +50,6 @@
             this.label6 = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
             this.guna2PictureBox1 = new Guna.UI2.WinForms.Guna2PictureBox();
-            this.label9 = new System.Windows.Forms.Label();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox1)).BeginInit();
             this.SuspendLayout();
@@ -82,6 +82,17 @@
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(912, 633);
             this.panel1.TabIndex = 20;
+            // 
+            // label9
+            // 
+            this.label9.AutoSize = true;
+            this.label9.Font = new System.Drawing.Font("Montserrat", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label9.Location = new System.Drawing.Point(299, 208);
+            this.label9.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label9.Name = "label9";
+            this.label9.Size = new System.Drawing.Size(315, 30);
+            this.label9.TabIndex = 28;
+            this.label9.Text = "Student Registration Area";
             // 
             // VerifyTxt
             // 
@@ -189,7 +200,7 @@
             this.PasswordTxt.Location = new System.Drawing.Point(576, 351);
             this.PasswordTxt.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
             this.PasswordTxt.Name = "PasswordTxt";
-            this.PasswordTxt.PasswordChar = '\0';
+            this.PasswordTxt.PasswordChar = '●';
             this.PasswordTxt.PlaceholderText = "";
             this.PasswordTxt.SelectedText = "";
             this.PasswordTxt.Size = new System.Drawing.Size(209, 39);
@@ -400,17 +411,6 @@
             this.guna2PictureBox1.TabIndex = 0;
             this.guna2PictureBox1.TabStop = false;
             // 
-            // label9
-            // 
-            this.label9.AutoSize = true;
-            this.label9.Font = new System.Drawing.Font("Montserrat", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label9.Location = new System.Drawing.Point(299, 208);
-            this.label9.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            this.label9.Name = "label9";
-            this.label9.Size = new System.Drawing.Size(315, 30);
-            this.label9.TabIndex = 28;
-            this.label9.Text = "Student Registration Area";
-            // 
             // RegisterStudent
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -418,6 +418,7 @@
             this.ClientSize = new System.Drawing.Size(907, 633);
             this.Controls.Add(this.panel1);
             this.Name = "RegisterStudent";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "RegisterStudent";
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();

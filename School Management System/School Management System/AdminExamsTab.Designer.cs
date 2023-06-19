@@ -69,6 +69,9 @@
             this.label9 = new System.Windows.Forms.Label();
             this.panel2 = new System.Windows.Forms.Panel();
             this.guna2DateTimePicker1 = new Guna.UI2.WinForms.Guna2DateTimePicker();
+            this.FilterBtn = new Guna.UI2.WinForms.Guna2Button();
+            this.FilterTxt = new Guna.UI2.WinForms.Guna2ComboBox();
+            this.label3 = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox1)).BeginInit();
             this.LogoutTab.SuspendLayout();
             this.panel3.SuspendLayout();
@@ -131,7 +134,7 @@
             this.AddressTxt.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.AddressTxt.Font = new System.Drawing.Font("Montserrat SemiBold", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.AddressTxt.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.AddressTxt.Location = new System.Drawing.Point(477, 165);
+            this.AddressTxt.Location = new System.Drawing.Point(477, 138);
             this.AddressTxt.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
             this.AddressTxt.Name = "AddressTxt";
             this.AddressTxt.PasswordChar = '\0';
@@ -150,7 +153,7 @@
             this.PrintBtn.FillColor = System.Drawing.Color.Maroon;
             this.PrintBtn.Font = new System.Drawing.Font("Montserrat", 8F, System.Drawing.FontStyle.Bold);
             this.PrintBtn.ForeColor = System.Drawing.Color.White;
-            this.PrintBtn.Location = new System.Drawing.Point(877, 219);
+            this.PrintBtn.Location = new System.Drawing.Point(877, 257);
             this.PrintBtn.Margin = new System.Windows.Forms.Padding(2);
             this.PrintBtn.Name = "PrintBtn";
             this.PrintBtn.Size = new System.Drawing.Size(116, 27);
@@ -166,7 +169,7 @@
             this.ResetBtn.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
             this.ResetBtn.Font = new System.Drawing.Font("Montserrat", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.ResetBtn.ForeColor = System.Drawing.Color.White;
-            this.ResetBtn.Location = new System.Drawing.Point(858, 158);
+            this.ResetBtn.Location = new System.Drawing.Point(858, 131);
             this.ResetBtn.Margin = new System.Windows.Forms.Padding(2);
             this.ResetBtn.Name = "ResetBtn";
             this.ResetBtn.Size = new System.Drawing.Size(135, 37);
@@ -182,7 +185,7 @@
             this.DeleteBtn.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
             this.DeleteBtn.Font = new System.Drawing.Font("Montserrat", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.DeleteBtn.ForeColor = System.Drawing.Color.White;
-            this.DeleteBtn.Location = new System.Drawing.Point(707, 158);
+            this.DeleteBtn.Location = new System.Drawing.Point(707, 131);
             this.DeleteBtn.Margin = new System.Windows.Forms.Padding(2);
             this.DeleteBtn.Name = "DeleteBtn";
             this.DeleteBtn.Size = new System.Drawing.Size(135, 37);
@@ -198,7 +201,7 @@
             this.UpdateBtn.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
             this.UpdateBtn.Font = new System.Drawing.Font("Montserrat", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.UpdateBtn.ForeColor = System.Drawing.Color.White;
-            this.UpdateBtn.Location = new System.Drawing.Point(858, 104);
+            this.UpdateBtn.Location = new System.Drawing.Point(858, 77);
             this.UpdateBtn.Margin = new System.Windows.Forms.Padding(2);
             this.UpdateBtn.Name = "UpdateBtn";
             this.UpdateBtn.Size = new System.Drawing.Size(135, 37);
@@ -210,7 +213,7 @@
             this.label10.AutoSize = true;
             this.label10.Font = new System.Drawing.Font("Montserrat", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label10.ForeColor = System.Drawing.Color.Black;
-            this.label10.Location = new System.Drawing.Point(529, 219);
+            this.label10.Location = new System.Drawing.Point(545, 257);
             this.label10.Name = "label10";
             this.label10.Size = new System.Drawing.Size(149, 29);
             this.label10.TabIndex = 41;
@@ -220,7 +223,7 @@
             // 
             this.label7.AutoSize = true;
             this.label7.Font = new System.Drawing.Font("Montserrat", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label7.Location = new System.Drawing.Point(474, 143);
+            this.label7.Location = new System.Drawing.Point(474, 116);
             this.label7.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label7.Name = "label7";
             this.label7.Size = new System.Drawing.Size(65, 19);
@@ -231,7 +234,7 @@
             // 
             this.LogoutTab.Controls.Add(this.LogoutBtn);
             this.LogoutTab.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.LogoutTab.Location = new System.Drawing.Point(0, 505);
+            this.LogoutTab.Location = new System.Drawing.Point(0, 544);
             this.LogoutTab.Name = "LogoutTab";
             this.LogoutTab.Size = new System.Drawing.Size(213, 50);
             this.LogoutTab.TabIndex = 1;
@@ -275,7 +278,7 @@
             // 
             this.label8.AutoSize = true;
             this.label8.Font = new System.Drawing.Font("Montserrat", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label8.Location = new System.Drawing.Point(474, 73);
+            this.label8.Location = new System.Drawing.Point(474, 46);
             this.label8.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label8.Name = "label8";
             this.label8.Size = new System.Drawing.Size(53, 19);
@@ -294,7 +297,7 @@
             this.NameTxt.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.NameTxt.Font = new System.Drawing.Font("Montserrat SemiBold", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.NameTxt.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.NameTxt.Location = new System.Drawing.Point(477, 95);
+            this.NameTxt.Location = new System.Drawing.Point(477, 68);
             this.NameTxt.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
             this.NameTxt.Name = "NameTxt";
             this.NameTxt.PasswordChar = '\0';
@@ -307,7 +310,7 @@
             // 
             this.label5.AutoSize = true;
             this.label5.Font = new System.Drawing.Font("Montserrat", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label5.Location = new System.Drawing.Point(239, 143);
+            this.label5.Location = new System.Drawing.Point(239, 116);
             this.label5.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(45, 19);
@@ -326,7 +329,7 @@
             this.IDTxt.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.IDTxt.Font = new System.Drawing.Font("Montserrat SemiBold", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.IDTxt.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.IDTxt.Location = new System.Drawing.Point(242, 95);
+            this.IDTxt.Location = new System.Drawing.Point(242, 68);
             this.IDTxt.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
             this.IDTxt.Name = "IDTxt";
             this.IDTxt.PasswordChar = '\0';
@@ -344,7 +347,7 @@
             this.AddBtn.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
             this.AddBtn.Font = new System.Drawing.Font("Montserrat", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.AddBtn.ForeColor = System.Drawing.Color.White;
-            this.AddBtn.Location = new System.Drawing.Point(707, 104);
+            this.AddBtn.Location = new System.Drawing.Point(707, 77);
             this.AddBtn.Margin = new System.Windows.Forms.Padding(2);
             this.AddBtn.Name = "AddBtn";
             this.AddBtn.Size = new System.Drawing.Size(135, 37);
@@ -396,7 +399,7 @@
             // 
             this.label6.AutoSize = true;
             this.label6.Font = new System.Drawing.Font("Montserrat", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label6.Location = new System.Drawing.Point(239, 73);
+            this.label6.Location = new System.Drawing.Point(239, 46);
             this.label6.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(26, 19);
@@ -426,7 +429,7 @@
             dataGridViewCellStyle6.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
             this.DataGrid.DefaultCellStyle = dataGridViewCellStyle6;
             this.DataGrid.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
-            this.DataGrid.Location = new System.Drawing.Point(219, 251);
+            this.DataGrid.Location = new System.Drawing.Point(219, 289);
             this.DataGrid.Name = "DataGrid";
             this.DataGrid.RowHeadersVisible = false;
             this.DataGrid.RowHeadersWidth = 51;
@@ -520,7 +523,7 @@
             this.panel1.ForeColor = System.Drawing.SystemColors.ControlText;
             this.panel1.Location = new System.Drawing.Point(0, 0);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(213, 555);
+            this.panel1.Size = new System.Drawing.Size(213, 594);
             this.panel1.TabIndex = 38;
             // 
             // panel4
@@ -558,11 +561,11 @@
             // label9
             // 
             this.label9.AutoSize = true;
-            this.label9.Font = new System.Drawing.Font("Montserrat", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label9.Font = new System.Drawing.Font("Montserrat", 20F, System.Drawing.FontStyle.Bold);
             this.label9.ForeColor = System.Drawing.Color.WhiteSmoke;
-            this.label9.Location = new System.Drawing.Point(322, 7);
+            this.label9.Location = new System.Drawing.Point(350, -1);
             this.label9.Name = "label9";
-            this.label9.Size = new System.Drawing.Size(130, 44);
+            this.label9.Size = new System.Drawing.Size(110, 37);
             this.label9.TabIndex = 2;
             this.label9.Text = "Exams";
             // 
@@ -572,7 +575,7 @@
             this.panel2.Controls.Add(this.label9);
             this.panel2.Location = new System.Drawing.Point(213, 0);
             this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(814, 63);
+            this.panel2.Size = new System.Drawing.Size(814, 40);
             this.panel2.TabIndex = 39;
             // 
             // guna2DateTimePicker1
@@ -581,7 +584,7 @@
             this.guna2DateTimePicker1.Checked = true;
             this.guna2DateTimePicker1.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.guna2DateTimePicker1.Format = System.Windows.Forms.DateTimePickerFormat.Long;
-            this.guna2DateTimePicker1.Location = new System.Drawing.Point(242, 165);
+            this.guna2DateTimePicker1.Location = new System.Drawing.Point(242, 138);
             this.guna2DateTimePicker1.MaxDate = new System.DateTime(9998, 12, 31, 0, 0, 0, 0);
             this.guna2DateTimePicker1.MinDate = new System.DateTime(1753, 1, 1, 0, 0, 0, 0);
             this.guna2DateTimePicker1.Name = "guna2DateTimePicker1";
@@ -589,11 +592,61 @@
             this.guna2DateTimePicker1.TabIndex = 55;
             this.guna2DateTimePicker1.Value = new System.DateTime(2023, 6, 13, 20, 56, 34, 123);
             // 
+            // FilterBtn
+            // 
+            this.FilterBtn.BorderRadius = 18;
+            this.FilterBtn.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
+            this.FilterBtn.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
+            this.FilterBtn.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.FilterBtn.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
+            this.FilterBtn.Font = new System.Drawing.Font("Montserrat", 10.2F, System.Drawing.FontStyle.Bold);
+            this.FilterBtn.ForeColor = System.Drawing.Color.White;
+            this.FilterBtn.Location = new System.Drawing.Point(724, 212);
+            this.FilterBtn.Margin = new System.Windows.Forms.Padding(2);
+            this.FilterBtn.Name = "FilterBtn";
+            this.FilterBtn.Size = new System.Drawing.Size(135, 37);
+            this.FilterBtn.TabIndex = 58;
+            this.FilterBtn.Text = "Update Grid";
+            // 
+            // FilterTxt
+            // 
+            this.FilterTxt.BackColor = System.Drawing.Color.Transparent;
+            this.FilterTxt.BorderRadius = 20;
+            this.FilterTxt.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawFixed;
+            this.FilterTxt.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.FilterTxt.FocusedColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.FilterTxt.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.FilterTxt.Font = new System.Drawing.Font("Segoe UI", 10F);
+            this.FilterTxt.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(68)))), ((int)(((byte)(88)))), ((int)(((byte)(112)))));
+            this.FilterTxt.ItemHeight = 30;
+            this.FilterTxt.Items.AddRange(new object[] {
+            "Male",
+            "Female",
+            "Rather Not Say"});
+            this.FilterTxt.Location = new System.Drawing.Point(512, 212);
+            this.FilterTxt.Name = "FilterTxt";
+            this.FilterTxt.Size = new System.Drawing.Size(207, 36);
+            this.FilterTxt.TabIndex = 57;
+            // 
+            // label3
+            // 
+            this.label3.AutoSize = true;
+            this.label3.Font = new System.Drawing.Font("Montserrat", 12F, System.Drawing.FontStyle.Bold);
+            this.label3.Location = new System.Drawing.Point(395, 219);
+            this.label3.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(117, 22);
+            this.label3.TabIndex = 56;
+            this.label3.Text = "Filter Search";
+            // 
             // AdminExamsTab
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1027, 555);
+            this.ClientSize = new System.Drawing.Size(1027, 594);
+            this.Controls.Add(this.FilterBtn);
+            this.Controls.Add(this.FilterTxt);
+            this.Controls.Add(this.label3);
             this.Controls.Add(this.guna2DateTimePicker1);
             this.Controls.Add(this.AddressTxt);
             this.Controls.Add(this.PrintBtn);
@@ -680,5 +733,8 @@
         private System.Windows.Forms.Label label9;
         private System.Windows.Forms.Panel panel2;
         private Guna.UI2.WinForms.Guna2DateTimePicker guna2DateTimePicker1;
+        private Guna.UI2.WinForms.Guna2Button FilterBtn;
+        private Guna.UI2.WinForms.Guna2ComboBox FilterTxt;
+        private System.Windows.Forms.Label label3;
     }
 }
