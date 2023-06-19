@@ -34,7 +34,7 @@ namespace School_Management_System
         }
 
         //readonly SqlConnection con = new SqlConnection(System.Configuration.ConfigurationManager.ConnectionStrings["dbcs"].ConnectionString);
-      SqlConnection  con = new SqlConnection("Data Source=DESKTOP-38NRAVC\\ALISERVER;Initial Catalog=SMS;Integrated Security=True");
+        SqlConnection  con = new SqlConnection("Data Source=DESKTOP-38NRAVC\\ALISERVER;Initial Catalog=SMS;Integrated Security=True");
         private void LogoutTab_Click(object sender, EventArgs e)
         {
             Application.Exit();
@@ -144,6 +144,34 @@ namespace School_Management_System
         private void ResetBtn_Click(object sender, EventArgs e)
         {
             clearFields();
+        }
+
+        private void DashboardTab_Paint(object sender, PaintEventArgs e)
+        {
+            AdminDashboardTab dt = new AdminDashboardTab();
+            dt.Show();
+            this.Hide();
+        }
+
+        private void EmployeeTab_Paint(object sender, PaintEventArgs e)
+        {
+            AdminEmployeesTab et = new AdminEmployeesTab();
+            et.Show();
+            this.Hide();
+        }
+
+        private void panel4_Paint(object sender, PaintEventArgs e)
+        {
+            AdminTimeTableTab ttt = new AdminTimeTableTab();
+            ttt.Show();
+            this.Hide();
+        }
+
+        private void ExamTab_Paint(object sender, PaintEventArgs e)
+        {
+            AdminExamsTab et = new AdminExamsTab();
+            et.Show();
+            this.Hide();
         }
 
         //private void panel1_Paint(object sender, PaintEventArgs e)

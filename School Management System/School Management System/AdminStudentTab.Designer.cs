@@ -116,6 +116,7 @@
             this.ExamTab.Name = "ExamTab";
             this.ExamTab.Size = new System.Drawing.Size(212, 52);
             this.ExamTab.TabIndex = 7;
+            this.ExamTab.Paint += new System.Windows.Forms.PaintEventHandler(this.ExamTab_Paint);
             // 
             // guna2PictureBox6
             // 
@@ -147,6 +148,7 @@
             this.panel4.Name = "panel4";
             this.panel4.Size = new System.Drawing.Size(212, 52);
             this.panel4.TabIndex = 5;
+            this.panel4.Paint += new System.Windows.Forms.PaintEventHandler(this.panel4_Paint);
             // 
             // guna2PictureBox5
             // 
@@ -179,6 +181,7 @@
             this.EmployeeTab.Size = new System.Drawing.Size(212, 52);
             this.EmployeeTab.TabIndex = 4;
             this.EmployeeTab.Click += new System.EventHandler(this.TeachersTab_Click);
+            this.EmployeeTab.Paint += new System.Windows.Forms.PaintEventHandler(this.EmployeeTab_Paint);
             // 
             // guna2PictureBox3
             // 
@@ -243,6 +246,7 @@
             this.DashboardTab.Name = "DashboardTab";
             this.DashboardTab.Size = new System.Drawing.Size(213, 52);
             this.DashboardTab.TabIndex = 2;
+            this.DashboardTab.Paint += new System.Windows.Forms.PaintEventHandler(this.DashboardTab_Paint);
             // 
             // guna2PictureBox1
             // 
