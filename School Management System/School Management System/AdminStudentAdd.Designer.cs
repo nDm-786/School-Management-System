@@ -30,8 +30,6 @@
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(AdminStudentAdd));
             this.label9 = new System.Windows.Forms.Label();
-            this.VerifyTxt = new System.Windows.Forms.Label();
-            this.HumanVerification = new Bunifu.UI.WinForms.BunifuHSlider();
             this.GenderTxt = new Guna.UI2.WinForms.Guna2ComboBox();
             this.label7 = new System.Windows.Forms.Label();
             this.PasswordTxt = new Guna.UI2.WinForms.Guna2TextBox();
@@ -63,66 +61,6 @@
             this.label9.Size = new System.Drawing.Size(315, 30);
             this.label9.TabIndex = 28;
             this.label9.Text = "Student Registration Area";
-            // 
-            // VerifyTxt
-            // 
-            this.VerifyTxt.AutoSize = true;
-            this.VerifyTxt.Font = new System.Drawing.Font("Montserrat", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.VerifyTxt.Location = new System.Drawing.Point(402, 442);
-            this.VerifyTxt.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            this.VerifyTxt.Name = "VerifyTxt";
-            this.VerifyTxt.Size = new System.Drawing.Size(109, 19);
-            this.VerifyTxt.TabIndex = 27;
-            this.VerifyTxt.Text = "Slide to Verify";
-            this.VerifyTxt.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // HumanVerification
-            // 
-            this.HumanVerification.AllowCursorChanges = true;
-            this.HumanVerification.AllowHomeEndKeysDetection = false;
-            this.HumanVerification.AllowIncrementalClickMoves = true;
-            this.HumanVerification.AllowMouseDownEffects = false;
-            this.HumanVerification.AllowMouseHoverEffects = false;
-            this.HumanVerification.AllowScrollingAnimations = true;
-            this.HumanVerification.AllowScrollKeysDetection = true;
-            this.HumanVerification.AllowScrollOptionsMenu = true;
-            this.HumanVerification.AllowShrinkingOnFocusLost = false;
-            this.HumanVerification.BackColor = System.Drawing.Color.Transparent;
-            this.HumanVerification.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("HumanVerification.BackgroundImage")));
-            this.HumanVerification.BindingContainer = null;
-            this.HumanVerification.BorderRadius = 2;
-            this.HumanVerification.BorderThickness = 1;
-            this.HumanVerification.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.HumanVerification.DrawThickBorder = true;
-            this.HumanVerification.DurationBeforeShrink = 2000;
-            this.HumanVerification.ElapsedColor = System.Drawing.Color.DodgerBlue;
-            this.HumanVerification.LargeChange = 10;
-            this.HumanVerification.Location = new System.Drawing.Point(356, 410);
-            this.HumanVerification.Maximum = 100;
-            this.HumanVerification.Minimum = 0;
-            this.HumanVerification.MinimumSize = new System.Drawing.Size(0, 31);
-            this.HumanVerification.MinimumThumbLength = 18;
-            this.HumanVerification.Name = "HumanVerification";
-            this.HumanVerification.OnDisable.ScrollBarBorderColor = System.Drawing.Color.Silver;
-            this.HumanVerification.OnDisable.ScrollBarColor = System.Drawing.Color.Transparent;
-            this.HumanVerification.OnDisable.ThumbColor = System.Drawing.Color.Silver;
-            this.HumanVerification.ScrollBarBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(210)))), ((int)(((byte)(232)))), ((int)(((byte)(255)))));
-            this.HumanVerification.ScrollBarColor = System.Drawing.Color.FromArgb(((int)(((byte)(210)))), ((int)(((byte)(232)))), ((int)(((byte)(255)))));
-            this.HumanVerification.ShrinkSizeLimit = 3;
-            this.HumanVerification.Size = new System.Drawing.Size(200, 31);
-            this.HumanVerification.SliderColor = System.Drawing.Color.FromArgb(((int)(((byte)(210)))), ((int)(((byte)(232)))), ((int)(((byte)(255)))));
-            this.HumanVerification.SliderStyle = Bunifu.UI.WinForms.BunifuHSlider.SliderStyles.Thick;
-            this.HumanVerification.SliderThumbStyle = Utilities.BunifuSlider.BunifuHScrollBar.SliderThumbStyles.Circular;
-            this.HumanVerification.SmallChange = 1;
-            this.HumanVerification.TabIndex = 26;
-            this.HumanVerification.ThumbColor = System.Drawing.Color.DodgerBlue;
-            this.HumanVerification.ThumbFillColor = System.Drawing.SystemColors.Control;
-            this.HumanVerification.ThumbLength = 19;
-            this.HumanVerification.ThumbMargin = 1;
-            this.HumanVerification.ThumbSize = Bunifu.UI.WinForms.BunifuHSlider.ThumbSizes.Medium;
-            this.HumanVerification.ThumbStyle = Bunifu.UI.WinForms.BunifuHSlider.ThumbStyles.Outline;
-            this.HumanVerification.Value = 0;
-            this.HumanVerification.Scroll += new System.EventHandler<Utilities.BunifuSlider.BunifuHScrollBar.ScrollEventArgs>(this.HumanVerification_Scroll);
             // 
             // GenderTxt
             // 
@@ -369,8 +307,6 @@
             // panel1
             // 
             this.panel1.Controls.Add(this.label9);
-            this.panel1.Controls.Add(this.VerifyTxt);
-            this.panel1.Controls.Add(this.HumanVerification);
             this.panel1.Controls.Add(this.GenderTxt);
             this.panel1.Controls.Add(this.label7);
             this.panel1.Controls.Add(this.PasswordTxt);
@@ -413,8 +349,6 @@
         #endregion
 
         private System.Windows.Forms.Label label9;
-        private System.Windows.Forms.Label VerifyTxt;
-        private Bunifu.UI.WinForms.BunifuHSlider HumanVerification;
         private Guna.UI2.WinForms.Guna2ComboBox GenderTxt;
         private System.Windows.Forms.Label label7;
         private Guna.UI2.WinForms.Guna2TextBox PasswordTxt;

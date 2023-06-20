@@ -118,14 +118,6 @@
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
   <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
-  <data name="HumanVerification.BackgroundImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
-    <value>
-        iVBORw0KGgoAAAANSUhEUgAAAMgAAAAfCAYAAACiY4IJAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8
-        YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAABaSURBVHhe7dMhCsAwEETR3P92jc0F4us3pbAu0aWw78GX
-        I6cBAAAAAAAAAAAAfKbPGH2uJdUtRt5hdx5Itco77K4Z92kgVen9QN4BAAAAAAAAAAAAAAD+qbUH+390
-        Y/zWpYAAAAAASUVORK5CYII=
-</value>
-  </data>
   <data name="guna2PictureBox1.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAAAvUAAAFKCAYAAACdNqCwAAAABGdBTUEAALGPC/xhBQAA/8dJREFUeF7s
