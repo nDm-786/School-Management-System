@@ -33,8 +33,8 @@ namespace School_Management_System
             //con = new SqlConnection(connectionString);
         }
 
-        //readonly SqlConnection con = new SqlConnection(System.Configuration.ConfigurationManager.ConnectionStrings["dbcs"].ConnectionString);
-        SqlConnection  con = new SqlConnection("Data Source=DESKTOP-38NRAVC\\ALISERVER;Initial Catalog=SMS;Integrated Security=True");
+        readonly SqlConnection con = new SqlConnection(System.Configuration.ConfigurationManager.ConnectionStrings["dbcs"].ConnectionString);
+        //SqlConnection  con = new SqlConnection("Data Source=DESKTOP-38NRAVC\\ALISERVER;Initial Catalog=SMS;Integrated Security=True");
         private void LogoutTab_Click(object sender, EventArgs e)
         {
             Application.Exit();
