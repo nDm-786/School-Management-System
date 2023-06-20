@@ -28,9 +28,9 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle10 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle11 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle12 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle7 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle8 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle9 = new System.Windows.Forms.DataGridViewCellStyle();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(AdminEmployeesTab));
             this.PhoneTxt = new Guna.UI2.WinForms.Guna2TextBox();
             this.PrintBtn = new Guna.UI2.WinForms.Guna2Button();
@@ -53,7 +53,7 @@
             this.LogoutBtn = new System.Windows.Forms.Label();
             this.LogoutTab = new System.Windows.Forms.Panel();
             this.guna2PictureBox1 = new Guna.UI2.WinForms.Guna2PictureBox();
-            this.label1 = new System.Windows.Forms.Label();
+            this.DashboardTabb = new System.Windows.Forms.Label();
             this.DashboardTab = new System.Windows.Forms.Panel();
             this.guna2PictureBox2 = new Guna.UI2.WinForms.Guna2PictureBox();
             this.StudentTab = new System.Windows.Forms.Label();
@@ -68,7 +68,7 @@
             this.ExamsTab = new System.Windows.Forms.Label();
             this.panel4 = new System.Windows.Forms.Panel();
             this.guna2PictureBox5 = new Guna.UI2.WinForms.Guna2PictureBox();
-            this.label2 = new System.Windows.Forms.Label();
+            this.TimeTableTab = new System.Windows.Forms.Label();
             this.FilterTxt = new Guna.UI2.WinForms.Guna2ComboBox();
             this.label3 = new System.Windows.Forms.Label();
             this.FilterBtn = new Guna.UI2.WinForms.Guna2Button();
@@ -294,26 +294,26 @@
             // 
             // DataGrid
             // 
-            dataGridViewCellStyle10.BackColor = System.Drawing.Color.White;
-            this.DataGrid.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle10;
-            dataGridViewCellStyle11.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle11.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(88)))), ((int)(((byte)(255)))));
-            dataGridViewCellStyle11.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle11.ForeColor = System.Drawing.Color.White;
-            dataGridViewCellStyle11.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle11.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle11.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.DataGrid.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle11;
+            dataGridViewCellStyle7.BackColor = System.Drawing.Color.White;
+            this.DataGrid.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle7;
+            dataGridViewCellStyle8.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle8.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(88)))), ((int)(((byte)(255)))));
+            dataGridViewCellStyle8.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle8.ForeColor = System.Drawing.Color.White;
+            dataGridViewCellStyle8.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle8.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle8.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.DataGrid.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle8;
             this.DataGrid.ColumnHeadersHeight = 4;
             this.DataGrid.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.EnableResizing;
-            dataGridViewCellStyle12.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle12.BackColor = System.Drawing.Color.White;
-            dataGridViewCellStyle12.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle12.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
-            dataGridViewCellStyle12.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
-            dataGridViewCellStyle12.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
-            dataGridViewCellStyle12.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
-            this.DataGrid.DefaultCellStyle = dataGridViewCellStyle12;
+            dataGridViewCellStyle9.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle9.BackColor = System.Drawing.Color.White;
+            dataGridViewCellStyle9.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle9.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
+            dataGridViewCellStyle9.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
+            dataGridViewCellStyle9.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
+            dataGridViewCellStyle9.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.DataGrid.DefaultCellStyle = dataGridViewCellStyle9;
             this.DataGrid.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
             this.DataGrid.Location = new System.Drawing.Point(219, 292);
             this.DataGrid.Name = "DataGrid";
@@ -420,26 +420,26 @@
             this.guna2PictureBox1.TabIndex = 1;
             this.guna2PictureBox1.TabStop = false;
             // 
-            // label1
+            // DashboardTabb
             // 
-            this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.ForeColor = System.Drawing.Color.WhiteSmoke;
-            this.label1.Location = new System.Drawing.Point(65, 13);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(111, 24);
-            this.label1.TabIndex = 0;
-            this.label1.Text = "Dashboard";
+            this.DashboardTabb.AutoSize = true;
+            this.DashboardTabb.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.DashboardTabb.ForeColor = System.Drawing.Color.WhiteSmoke;
+            this.DashboardTabb.Location = new System.Drawing.Point(65, 13);
+            this.DashboardTabb.Name = "DashboardTabb";
+            this.DashboardTabb.Size = new System.Drawing.Size(111, 24);
+            this.DashboardTabb.TabIndex = 0;
+            this.DashboardTabb.Text = "Dashboard";
+            this.DashboardTabb.Click += new System.EventHandler(this.DashboardTabb_Click);
             // 
             // DashboardTab
             // 
             this.DashboardTab.Controls.Add(this.guna2PictureBox1);
-            this.DashboardTab.Controls.Add(this.label1);
+            this.DashboardTab.Controls.Add(this.DashboardTabb);
             this.DashboardTab.Location = new System.Drawing.Point(0, 147);
             this.DashboardTab.Name = "DashboardTab";
             this.DashboardTab.Size = new System.Drawing.Size(213, 52);
             this.DashboardTab.TabIndex = 2;
-            this.DashboardTab.Paint += new System.Windows.Forms.PaintEventHandler(this.DashboardTab_Paint);
             // 
             // guna2PictureBox2
             // 
@@ -474,7 +474,6 @@
             this.StudentsTab.Size = new System.Drawing.Size(212, 52);
             this.StudentsTab.TabIndex = 3;
             this.StudentsTab.Click += new System.EventHandler(this.StudentsTab_Click);
-            this.StudentsTab.Paint += new System.Windows.Forms.PaintEventHandler(this.StudentsTab_Paint);
             // 
             // guna2PictureBox3
             // 
@@ -555,7 +554,6 @@
             this.ExamTab.Name = "ExamTab";
             this.ExamTab.Size = new System.Drawing.Size(212, 52);
             this.ExamTab.TabIndex = 7;
-            this.ExamTab.Paint += new System.Windows.Forms.PaintEventHandler(this.ExamTab_Paint);
             // 
             // guna2PictureBox6
             // 
@@ -578,16 +576,16 @@
             this.ExamsTab.Size = new System.Drawing.Size(73, 24);
             this.ExamsTab.TabIndex = 0;
             this.ExamsTab.Text = "Exams";
+            this.ExamsTab.Click += new System.EventHandler(this.ExamsTab_Click);
             // 
             // panel4
             // 
             this.panel4.Controls.Add(this.guna2PictureBox5);
-            this.panel4.Controls.Add(this.label2);
+            this.panel4.Controls.Add(this.TimeTableTab);
             this.panel4.Location = new System.Drawing.Point(1, 304);
             this.panel4.Name = "panel4";
             this.panel4.Size = new System.Drawing.Size(212, 52);
             this.panel4.TabIndex = 38;
-            this.panel4.Paint += new System.Windows.Forms.PaintEventHandler(this.panel4_Paint);
             // 
             // guna2PictureBox5
             // 
@@ -600,16 +598,17 @@
             this.guna2PictureBox5.TabIndex = 1;
             this.guna2PictureBox5.TabStop = false;
             // 
-            // label2
+            // TimeTableTab
             // 
-            this.label2.AutoSize = true;
-            this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.ForeColor = System.Drawing.Color.WhiteSmoke;
-            this.label2.Location = new System.Drawing.Point(65, 13);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(116, 24);
-            this.label2.TabIndex = 0;
-            this.label2.Text = "Time Table";
+            this.TimeTableTab.AutoSize = true;
+            this.TimeTableTab.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.TimeTableTab.ForeColor = System.Drawing.Color.WhiteSmoke;
+            this.TimeTableTab.Location = new System.Drawing.Point(65, 13);
+            this.TimeTableTab.Name = "TimeTableTab";
+            this.TimeTableTab.Size = new System.Drawing.Size(116, 24);
+            this.TimeTableTab.TabIndex = 0;
+            this.TimeTableTab.Text = "Time Table";
+            this.TimeTableTab.Click += new System.EventHandler(this.TimeTableTab_Click);
             // 
             // FilterTxt
             // 
@@ -737,7 +736,7 @@
         private System.Windows.Forms.Label LogoutBtn;
         private System.Windows.Forms.Panel LogoutTab;
         private Guna.UI2.WinForms.Guna2PictureBox guna2PictureBox1;
-        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Label DashboardTabb;
         private System.Windows.Forms.Panel DashboardTab;
         private Guna.UI2.WinForms.Guna2PictureBox guna2PictureBox2;
         private System.Windows.Forms.Label StudentTab;
@@ -750,7 +749,7 @@
         private Guna.UI2.WinForms.Guna2PictureBox guna2PictureBox4;
         private System.Windows.Forms.Panel panel4;
         private Guna.UI2.WinForms.Guna2PictureBox guna2PictureBox5;
-        private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.Label TimeTableTab;
         private System.Windows.Forms.Panel ExamTab;
         private Guna.UI2.WinForms.Guna2PictureBox guna2PictureBox6;
         private System.Windows.Forms.Label ExamsTab;

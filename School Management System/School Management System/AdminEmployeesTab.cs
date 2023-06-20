@@ -31,15 +31,15 @@ namespace School_Management_System
 
         private void StudentsTab_Click(object sender, EventArgs e)
         {
-            AdminStudentTab ads = new AdminStudentTab();
-            ads.Show();
+            AdminStudentTab st = new AdminStudentTab();
+            st.Show();
             this.Hide();
         }
 
         private void StudentTab_Click(object sender, EventArgs e)
         {
-            AdminStudentTab ads = new AdminStudentTab();
-            ads.Show();
+            AdminStudentTab st = new AdminStudentTab();
+            st.Show();
             this.Hide();
         }
 
@@ -115,28 +115,21 @@ namespace School_Management_System
             }
         }
 
-        private void DashboardTab_Paint(object sender, PaintEventArgs e)
+        private void DashboardTabb_Click(object sender, EventArgs e)
         {
             AdminDashboardTab dt = new AdminDashboardTab();
             dt.Show();
             this.Hide();
         }
 
-        private void panel4_Paint(object sender, PaintEventArgs e)
+        private void TimeTableTab_Click(object sender, EventArgs e)
         {
             AdminTimeTableTab ttt = new AdminTimeTableTab();
             ttt.Show();
             this.Hide();
         }
 
-        private void StudentsTab_Paint(object sender, PaintEventArgs e)
-        {
-            AdminStudentTab st = new AdminStudentTab();
-            st.Show();
-            this.Hide();
-        }
-
-        private void ExamTab_Paint(object sender, PaintEventArgs e)
+        private void ExamsTab_Click(object sender, EventArgs e)
         {
             AdminExamsTab et = new AdminExamsTab();
             et.Show();

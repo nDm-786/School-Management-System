@@ -34,7 +34,7 @@
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle12 = new System.Windows.Forms.DataGridViewCellStyle();
             this.StudentTab = new System.Windows.Forms.Label();
             this.guna2PictureBox1 = new Guna.UI2.WinForms.Guna2PictureBox();
-            this.label1 = new System.Windows.Forms.Label();
+            this.DashboardTabb = new System.Windows.Forms.Label();
             this.AddressTxt = new Guna.UI2.WinForms.Guna2TextBox();
             this.PrintBtn = new Guna.UI2.WinForms.Guna2Button();
             this.ResetBtn = new Guna.UI2.WinForms.Guna2Button();
@@ -65,7 +65,7 @@
             this.panel1 = new System.Windows.Forms.Panel();
             this.panel4 = new System.Windows.Forms.Panel();
             this.guna2PictureBox5 = new Guna.UI2.WinForms.Guna2PictureBox();
-            this.label2 = new System.Windows.Forms.Label();
+            this.TimeTableTab = new System.Windows.Forms.Label();
             this.label9 = new System.Windows.Forms.Label();
             this.panel2 = new System.Windows.Forms.Panel();
             this.guna2DateTimePicker1 = new Guna.UI2.WinForms.Guna2DateTimePicker();
@@ -100,6 +100,7 @@
             this.StudentTab.Size = new System.Drawing.Size(91, 24);
             this.StudentTab.TabIndex = 0;
             this.StudentTab.Text = "Students";
+            this.StudentTab.Click += new System.EventHandler(this.StudentTab_Click);
             // 
             // guna2PictureBox1
             // 
@@ -111,16 +112,17 @@
             this.guna2PictureBox1.TabIndex = 1;
             this.guna2PictureBox1.TabStop = false;
             // 
-            // label1
+            // DashboardTabb
             // 
-            this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.ForeColor = System.Drawing.Color.WhiteSmoke;
-            this.label1.Location = new System.Drawing.Point(65, 13);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(111, 24);
-            this.label1.TabIndex = 0;
-            this.label1.Text = "Dashboard";
+            this.DashboardTabb.AutoSize = true;
+            this.DashboardTabb.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.DashboardTabb.ForeColor = System.Drawing.Color.WhiteSmoke;
+            this.DashboardTabb.Location = new System.Drawing.Point(65, 13);
+            this.DashboardTabb.Name = "DashboardTabb";
+            this.DashboardTabb.Size = new System.Drawing.Size(111, 24);
+            this.DashboardTabb.TabIndex = 0;
+            this.DashboardTabb.Text = "Dashboard";
+            this.DashboardTabb.Click += new System.EventHandler(this.DashboardTabb_Click);
             // 
             // AddressTxt
             // 
@@ -357,12 +359,11 @@
             // DashboardTab
             // 
             this.DashboardTab.Controls.Add(this.guna2PictureBox1);
-            this.DashboardTab.Controls.Add(this.label1);
+            this.DashboardTab.Controls.Add(this.DashboardTabb);
             this.DashboardTab.Location = new System.Drawing.Point(0, 147);
             this.DashboardTab.Name = "DashboardTab";
             this.DashboardTab.Size = new System.Drawing.Size(213, 52);
             this.DashboardTab.TabIndex = 2;
-            this.DashboardTab.Paint += new System.Windows.Forms.PaintEventHandler(this.DashboardTab_Paint);
             // 
             // ExamTab
             // 
@@ -467,7 +468,6 @@
             this.StudentsTab.Name = "StudentsTab";
             this.StudentsTab.Size = new System.Drawing.Size(212, 52);
             this.StudentsTab.TabIndex = 3;
-            this.StudentsTab.Paint += new System.Windows.Forms.PaintEventHandler(this.StudentsTab_Paint);
             // 
             // guna2PictureBox2
             // 
@@ -501,6 +501,7 @@
             this.EmployeesTab.Size = new System.Drawing.Size(114, 24);
             this.EmployeesTab.TabIndex = 0;
             this.EmployeesTab.Text = "Employees";
+            this.EmployeesTab.Click += new System.EventHandler(this.EmployeesTab_Click);
             // 
             // EmployeeTab
             // 
@@ -510,7 +511,6 @@
             this.EmployeeTab.Name = "EmployeeTab";
             this.EmployeeTab.Size = new System.Drawing.Size(212, 52);
             this.EmployeeTab.TabIndex = 4;
-            this.EmployeeTab.Paint += new System.Windows.Forms.PaintEventHandler(this.EmployeeTab_Paint);
             // 
             // panel1
             // 
@@ -533,12 +533,11 @@
             // 
             this.panel4.BackColor = System.Drawing.Color.Transparent;
             this.panel4.Controls.Add(this.guna2PictureBox5);
-            this.panel4.Controls.Add(this.label2);
+            this.panel4.Controls.Add(this.TimeTableTab);
             this.panel4.Location = new System.Drawing.Point(1, 304);
             this.panel4.Name = "panel4";
             this.panel4.Size = new System.Drawing.Size(212, 52);
             this.panel4.TabIndex = 5;
-            this.panel4.Paint += new System.Windows.Forms.PaintEventHandler(this.panel4_Paint);
             // 
             // guna2PictureBox5
             // 
@@ -551,16 +550,17 @@
             this.guna2PictureBox5.TabIndex = 1;
             this.guna2PictureBox5.TabStop = false;
             // 
-            // label2
+            // TimeTableTab
             // 
-            this.label2.AutoSize = true;
-            this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.ForeColor = System.Drawing.Color.WhiteSmoke;
-            this.label2.Location = new System.Drawing.Point(65, 13);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(116, 24);
-            this.label2.TabIndex = 0;
-            this.label2.Text = "Time Table";
+            this.TimeTableTab.AutoSize = true;
+            this.TimeTableTab.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.TimeTableTab.ForeColor = System.Drawing.Color.WhiteSmoke;
+            this.TimeTableTab.Location = new System.Drawing.Point(65, 13);
+            this.TimeTableTab.Name = "TimeTableTab";
+            this.TimeTableTab.Size = new System.Drawing.Size(116, 24);
+            this.TimeTableTab.TabIndex = 0;
+            this.TimeTableTab.Text = "Time Table";
+            this.TimeTableTab.Click += new System.EventHandler(this.TimeTableTab_Click);
             // 
             // label9
             // 
@@ -702,7 +702,7 @@
 
         private System.Windows.Forms.Label StudentTab;
         private Guna.UI2.WinForms.Guna2PictureBox guna2PictureBox1;
-        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Label DashboardTabb;
         private Guna.UI2.WinForms.Guna2TextBox AddressTxt;
         private Guna.UI2.WinForms.Guna2Button PrintBtn;
         private Guna.UI2.WinForms.Guna2Button ResetBtn;
@@ -733,7 +733,7 @@
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.Panel panel4;
         private Guna.UI2.WinForms.Guna2PictureBox guna2PictureBox5;
-        private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.Label TimeTableTab;
         private System.Windows.Forms.Label label9;
         private System.Windows.Forms.Panel panel2;
         private Guna.UI2.WinForms.Guna2DateTimePicker guna2DateTimePicker1;

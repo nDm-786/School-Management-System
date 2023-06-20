@@ -17,31 +17,31 @@ namespace School_Management_System
             InitializeComponent();
         }
 
-        private void DashboardTab_Paint(object sender, PaintEventArgs e)
+        private void DashboardTabb_Click(object sender, EventArgs e)
         {
             AdminDashboardTab dt = new AdminDashboardTab();
             dt.Show();
             this.Hide();
         }
 
-        private void EmployeeTab_Paint(object sender, PaintEventArgs e)
+        private void StudentTab_Click(object sender, EventArgs e)
+        {
+            AdminStudentTab st = new AdminStudentTab();
+            st.Show();
+            this.Hide();
+        }
+
+        private void EmployeesTab_Click(object sender, EventArgs e)
         {
             AdminEmployeesTab et = new AdminEmployeesTab();
             et.Show();
             this.Hide();
         }
 
-        private void panel4_Paint(object sender, PaintEventArgs e)
+        private void TimeTableTab_Click(object sender, EventArgs e)
         {
             AdminTimeTableTab ttt = new AdminTimeTableTab();
             ttt.Show();
-            this.Hide();
-        }
-
-        private void StudentsTab_Paint(object sender, PaintEventArgs e)
-        {
-            AdminStudentTab st = new AdminStudentTab();
-            st.Show();
             this.Hide();
         }
     }

@@ -22,12 +22,5 @@ namespace School_Management_System
             // yahan pr new Add Student ka Procedure aayega
         }
 
-        private void HumanVerification_Scroll(object sender, Utilities.BunifuSlider.BunifuHScrollBar.ScrollEventArgs e)
-        {
-            if (HumanVerification.Value == 100)
-            {
-                VerifyTxt.Text = "     Verified";
-            }
-        }
     }
 }

@@ -146,37 +146,27 @@ namespace School_Management_System
             clearFields();
         }
 
-        private void DashboardTab_Paint(object sender, PaintEventArgs e)
+
+
+        private void DashboardTabb_Click(object sender, EventArgs e)
         {
             AdminDashboardTab dt = new AdminDashboardTab();
             dt.Show();
             this.Hide();
         }
 
-        private void EmployeeTab_Paint(object sender, PaintEventArgs e)
-        {
-            AdminEmployeesTab et = new AdminEmployeesTab();
-            et.Show();
-            this.Hide();
-        }
-
-        private void panel4_Paint(object sender, PaintEventArgs e)
+        private void TimeTableTab_Click(object sender, EventArgs e)
         {
             AdminTimeTableTab ttt = new AdminTimeTableTab();
             ttt.Show();
             this.Hide();
         }
 
-        private void ExamTab_Paint(object sender, PaintEventArgs e)
+        private void ExamsTab_Click(object sender, EventArgs e)
         {
             AdminExamsTab et = new AdminExamsTab();
             et.Show();
             this.Hide();
         }
-
-        //private void panel1_Paint(object sender, PaintEventArgs e)
-        //{
-
-        //}
     }
 }

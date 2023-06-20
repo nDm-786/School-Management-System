@@ -63,7 +63,7 @@
             this.StudentTab = new System.Windows.Forms.Label();
             this.DashboardTab = new System.Windows.Forms.Panel();
             this.guna2PictureBox1 = new Guna.UI2.WinForms.Guna2PictureBox();
-            this.label1 = new System.Windows.Forms.Label();
+            this.DashboardTabb = new System.Windows.Forms.Label();
             this.LogoutTab = new System.Windows.Forms.Panel();
             this.LogoutBtn = new System.Windows.Forms.Label();
             this.panel3 = new System.Windows.Forms.Panel();
@@ -430,7 +430,6 @@
             this.ExamTab.Name = "ExamTab";
             this.ExamTab.Size = new System.Drawing.Size(212, 52);
             this.ExamTab.TabIndex = 6;
-            this.ExamTab.Paint += new System.Windows.Forms.PaintEventHandler(this.ExamTab_Paint);
             // 
             // guna2PictureBox6
             // 
@@ -453,6 +452,7 @@
             this.ExamsTab.Size = new System.Drawing.Size(73, 24);
             this.ExamsTab.TabIndex = 0;
             this.ExamsTab.Text = "Exams";
+            this.ExamsTab.Click += new System.EventHandler(this.ExamsTab_Click);
             // 
             // EmployeeTab
             // 
@@ -462,7 +462,6 @@
             this.EmployeeTab.Name = "EmployeeTab";
             this.EmployeeTab.Size = new System.Drawing.Size(212, 52);
             this.EmployeeTab.TabIndex = 4;
-            this.EmployeeTab.Paint += new System.Windows.Forms.PaintEventHandler(this.EmployeeTab_Paint);
             // 
             // guna2PictureBox3
             // 
@@ -485,6 +484,7 @@
             this.EmployeesTab.Size = new System.Drawing.Size(114, 24);
             this.EmployeesTab.TabIndex = 0;
             this.EmployeesTab.Text = "Employees";
+            this.EmployeesTab.Click += new System.EventHandler(this.EmployeesTab_Click);
             // 
             // StudentsTab
             // 
@@ -495,7 +495,6 @@
             this.StudentsTab.Name = "StudentsTab";
             this.StudentsTab.Size = new System.Drawing.Size(212, 52);
             this.StudentsTab.TabIndex = 3;
-            this.StudentsTab.Paint += new System.Windows.Forms.PaintEventHandler(this.StudentsTab_Paint);
             // 
             // guna2PictureBox2
             // 
@@ -518,16 +517,16 @@
             this.StudentTab.Size = new System.Drawing.Size(91, 24);
             this.StudentTab.TabIndex = 0;
             this.StudentTab.Text = "Students";
+            this.StudentTab.Click += new System.EventHandler(this.StudentTab_Click);
             // 
             // DashboardTab
             // 
             this.DashboardTab.Controls.Add(this.guna2PictureBox1);
-            this.DashboardTab.Controls.Add(this.label1);
+            this.DashboardTab.Controls.Add(this.DashboardTabb);
             this.DashboardTab.Location = new System.Drawing.Point(0, 147);
             this.DashboardTab.Name = "DashboardTab";
             this.DashboardTab.Size = new System.Drawing.Size(213, 52);
             this.DashboardTab.TabIndex = 2;
-            this.DashboardTab.Paint += new System.Windows.Forms.PaintEventHandler(this.DashboardTab_Paint);
             // 
             // guna2PictureBox1
             // 
@@ -539,16 +538,17 @@
             this.guna2PictureBox1.TabIndex = 1;
             this.guna2PictureBox1.TabStop = false;
             // 
-            // label1
+            // DashboardTabb
             // 
-            this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.ForeColor = System.Drawing.Color.WhiteSmoke;
-            this.label1.Location = new System.Drawing.Point(65, 13);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(111, 24);
-            this.label1.TabIndex = 0;
-            this.label1.Text = "Dashboard";
+            this.DashboardTabb.AutoSize = true;
+            this.DashboardTabb.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.DashboardTabb.ForeColor = System.Drawing.Color.WhiteSmoke;
+            this.DashboardTabb.Location = new System.Drawing.Point(65, 13);
+            this.DashboardTabb.Name = "DashboardTabb";
+            this.DashboardTabb.Size = new System.Drawing.Size(111, 24);
+            this.DashboardTabb.TabIndex = 0;
+            this.DashboardTabb.Text = "Dashboard";
+            this.DashboardTabb.Click += new System.EventHandler(this.DashboardTabb_Click);
             // 
             // LogoutTab
             // 
@@ -735,7 +735,7 @@
         private System.Windows.Forms.Label StudentTab;
         private System.Windows.Forms.Panel DashboardTab;
         private Guna.UI2.WinForms.Guna2PictureBox guna2PictureBox1;
-        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Label DashboardTabb;
         private System.Windows.Forms.Panel LogoutTab;
         private System.Windows.Forms.Label LogoutBtn;
         private System.Windows.Forms.Panel panel3;
