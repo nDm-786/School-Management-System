@@ -8,6 +8,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using static System.ComponentModel.Design.ObjectSelectorEditor;
 
 namespace School_Management_System
 {
@@ -41,8 +42,49 @@ namespace School_Management_System
         private void AdminDashboardTab_Load(object sender, EventArgs e)
         {
             loadgridviews();
+            updateStudentCount();
+            updateEmployeeCount();
+            updateEnrollCount();
+            updateClassWithMostAdmissions();
         }
-
+        public void updateStudentCount()
+        {
+            string querry = "SELECT * FROM TotalStudentsView;";
+            SqlCommand cmd = new SqlCommand(querry, con);
+            SqlDataAdapter sd = new SqlDataAdapter(cmd);
+            DataTable dt = new DataTable();
+            sd.Fill(dt);
+            StudentCount.Text = dt.Rows[0][0].ToString();
+        }
+        public void updateEmployeeCount()
+        {
+            string querry = "SELECT * FROM TotalEmployeesView;";
+            SqlCommand cmd = new SqlCommand(querry, con);
+            SqlDataAdapter sd = new SqlDataAdapter(cmd);
+            DataTable dt = new DataTable();
+            sd.Fill(dt);
+            EmployeeCount.Text = dt.Rows[0][0].ToString();
+        }
+        public void updateEnrollCount()
+        {
+            string querry = "SELECT * FROM View_EnrollmentCountLast6Months;";
+            SqlCommand cmd = new SqlCommand(querry, con);
+            SqlDataAdapter sd = new SqlDataAdapter(cmd);
+            DataTable dt = new DataTable();
+            sd.Fill(dt);
+            Past6MonthCount.Text = dt.Rows[0][0].ToString();
+            StartDate.Text = dt.Rows[0][1].ToString().Substring(0,11);
+            EndDate.Text = dt.Rows[0][2].ToString().Substring(0, 11);
+        }
+        public void updateClassWithMostAdmissions()
+        {
+            string querry = "SELECT * FROM ClassWithMostAdmissions;;";
+            SqlCommand cmd = new SqlCommand(querry, con);
+            SqlDataAdapter sd = new SqlDataAdapter(cmd);
+            DataTable dt = new DataTable();
+            sd.Fill(dt);
+            MostAdmittedClass.Text = dt.Rows[0][1].ToString();
+        }
         private void StudentsTabb_Click(object sender, EventArgs e)
         {
             AdminStudentTab st = new AdminStudentTab();

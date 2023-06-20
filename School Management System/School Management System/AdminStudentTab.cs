@@ -108,6 +108,7 @@ namespace School_Management_System
         {
             AdminStudentAdd adminStudentAdd = new AdminStudentAdd();
             adminStudentAdd.Show();
+            this.Hide();
         }
 
         private void UpdateBtn_Click(object sender, EventArgs e)
@@ -167,6 +168,16 @@ namespace School_Management_System
             AdminExamsTab et = new AdminExamsTab();
             et.Show();
             this.Hide();
+        }
+
+        private void FilterBtn_Click(object sender, EventArgs e)
+        {
+            string querry = "Select S.StudentID, S.Name, S.Phone, S.Address, S.ClassID from Students S inner join Classes C on S.ClassID = C.ClassID where C.ClassName = '"+FilterTxt.SelectedItem.ToString()+"'";
+            SqlCommand cmd = new SqlCommand(querry, con);
+            SqlDataAdapter sd = new SqlDataAdapter(cmd);
+            DataTable dt = new DataTable();
+            sd.Fill(dt);
+            DataGrid.DataSource = dt;
         }
     }
 }

@@ -80,15 +80,21 @@
             this.label29 = new System.Windows.Forms.Label();
             this.guna2Panel5 = new Guna.UI2.WinForms.Guna2Panel();
             this.guna2PictureBox11 = new Guna.UI2.WinForms.Guna2PictureBox();
-            this.label6 = new System.Windows.Forms.Label();
+            this.Past6MonthCount = new System.Windows.Forms.Label();
             this.label8 = new System.Windows.Forms.Label();
             this.guna2Panel6 = new Guna.UI2.WinForms.Guna2Panel();
             this.guna2PictureBox12 = new Guna.UI2.WinForms.Guna2PictureBox();
-            this.label12 = new System.Windows.Forms.Label();
+            this.MostAdmittedClass = new System.Windows.Forms.Label();
             this.label13 = new System.Windows.Forms.Label();
             this.guna2Button1 = new Guna.UI2.WinForms.Guna2Button();
             this.label14 = new System.Windows.Forms.Label();
             this.DataGridEmployees = new Guna.UI2.WinForms.Guna2DataGridView();
+            this.StartDate = new System.Windows.Forms.Label();
+            this.EndDate = new System.Windows.Forms.Label();
+            this.label6 = new System.Windows.Forms.Label();
+            this.panel5 = new System.Windows.Forms.Panel();
+            this.guna2PictureBox13 = new Guna.UI2.WinForms.Guna2PictureBox();
+            this.OnHoldStudentsTab = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox3)).BeginInit();
             this.panel4.SuspendLayout();
@@ -118,6 +124,8 @@
             this.guna2Panel6.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox12)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.DataGridEmployees)).BeginInit();
+            this.panel5.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox13)).BeginInit();
             this.SuspendLayout();
             // 
             // ExamsTab
@@ -341,6 +349,7 @@
             // panel1
             // 
             this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(8)))), ((int)(((byte)(43)))));
+            this.panel1.Controls.Add(this.panel5);
             this.panel1.Controls.Add(this.ExamTab);
             this.panel1.Controls.Add(this.panel4);
             this.panel1.Controls.Add(this.EmployeeTab);
@@ -490,22 +499,22 @@
             // StudentCount
             // 
             this.StudentCount.AutoSize = true;
-            this.StudentCount.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.StudentCount.Font = new System.Drawing.Font("Montserrat ExtraBold", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.StudentCount.ForeColor = System.Drawing.Color.WhiteSmoke;
-            this.StudentCount.Location = new System.Drawing.Point(26, 53);
+            this.StudentCount.Location = new System.Drawing.Point(81, 47);
             this.StudentCount.Name = "StudentCount";
-            this.StudentCount.Size = new System.Drawing.Size(136, 31);
+            this.StudentCount.Size = new System.Drawing.Size(177, 44);
             this.StudentCount.TabIndex = 4;
             this.StudentCount.Text = "StdCount";
             // 
             // label4
             // 
             this.label4.AutoSize = true;
-            this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label4.Font = new System.Drawing.Font("Montserrat SemiBold", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label4.ForeColor = System.Drawing.Color.WhiteSmoke;
-            this.label4.Location = new System.Drawing.Point(72, 16);
+            this.label4.Location = new System.Drawing.Point(59, 17);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(91, 24);
+            this.label4.Size = new System.Drawing.Size(101, 26);
             this.label4.TabIndex = 3;
             this.label4.Text = "Students";
             // 
@@ -550,22 +559,22 @@
             // EmployeeCount
             // 
             this.EmployeeCount.AutoSize = true;
-            this.EmployeeCount.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.EmployeeCount.Font = new System.Drawing.Font("Montserrat ExtraBold", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.EmployeeCount.ForeColor = System.Drawing.Color.WhiteSmoke;
-            this.EmployeeCount.Location = new System.Drawing.Point(26, 53);
+            this.EmployeeCount.Location = new System.Drawing.Point(77, 47);
             this.EmployeeCount.Name = "EmployeeCount";
-            this.EmployeeCount.Size = new System.Drawing.Size(150, 31);
+            this.EmployeeCount.Size = new System.Drawing.Size(198, 44);
             this.EmployeeCount.TabIndex = 4;
             this.EmployeeCount.Text = "EmpCount";
             // 
             // label7
             // 
             this.label7.AutoSize = true;
-            this.label7.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label7.Font = new System.Drawing.Font("Montserrat SemiBold", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label7.ForeColor = System.Drawing.Color.WhiteSmoke;
-            this.label7.Location = new System.Drawing.Point(68, 16);
+            this.label7.Location = new System.Drawing.Point(48, 17);
             this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(114, 24);
+            this.label7.Size = new System.Drawing.Size(120, 26);
             this.label7.TabIndex = 3;
             this.label7.Text = "Employees";
             // 
@@ -599,22 +608,22 @@
             // OnHoldStdCount
             // 
             this.OnHoldStdCount.AutoSize = true;
-            this.OnHoldStdCount.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.OnHoldStdCount.Font = new System.Drawing.Font("Montserrat ExtraBold", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.OnHoldStdCount.ForeColor = System.Drawing.Color.WhiteSmoke;
-            this.OnHoldStdCount.Location = new System.Drawing.Point(26, 53);
+            this.OnHoldStdCount.Location = new System.Drawing.Point(26, 51);
             this.OnHoldStdCount.Name = "OnHoldStdCount";
-            this.OnHoldStdCount.Size = new System.Drawing.Size(234, 31);
+            this.OnHoldStdCount.Size = new System.Drawing.Size(305, 44);
             this.OnHoldStdCount.TabIndex = 4;
             this.OnHoldStdCount.Text = "OnHoldStdCount";
             // 
             // label11
             // 
             this.label11.AutoSize = true;
-            this.label11.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label11.Font = new System.Drawing.Font("Montserrat SemiBold", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label11.ForeColor = System.Drawing.Color.WhiteSmoke;
             this.label11.Location = new System.Drawing.Point(62, 16);
             this.label11.Name = "label11";
-            this.label11.Size = new System.Drawing.Size(143, 24);
+            this.label11.Size = new System.Drawing.Size(148, 26);
             this.label11.TabIndex = 3;
             this.label11.Text = "Adm. On Hold";
             // 
@@ -648,22 +657,22 @@
             // MostAdmissionCount
             // 
             this.MostAdmissionCount.AutoSize = true;
-            this.MostAdmissionCount.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.MostAdmissionCount.Font = new System.Drawing.Font("Montserrat ExtraBold", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.MostAdmissionCount.ForeColor = System.Drawing.Color.WhiteSmoke;
-            this.MostAdmissionCount.Location = new System.Drawing.Point(24, 52);
+            this.MostAdmissionCount.Location = new System.Drawing.Point(24, 50);
             this.MostAdmissionCount.Name = "MostAdmissionCount";
-            this.MostAdmissionCount.Size = new System.Drawing.Size(289, 31);
+            this.MostAdmissionCount.Size = new System.Drawing.Size(384, 44);
             this.MostAdmissionCount.TabIndex = 4;
             this.MostAdmissionCount.Text = "MostAdmissionCount";
             // 
             // label29
             // 
             this.label29.AutoSize = true;
-            this.label29.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label29.Font = new System.Drawing.Font("Montserrat SemiBold", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label29.ForeColor = System.Drawing.Color.WhiteSmoke;
             this.label29.Location = new System.Drawing.Point(55, 16);
             this.label29.Name = "label29";
-            this.label29.Size = new System.Drawing.Size(157, 24);
+            this.label29.Size = new System.Drawing.Size(167, 26);
             this.label29.TabIndex = 3;
             this.label29.Text = "Most Admission";
             // 
@@ -672,8 +681,11 @@
             this.guna2Panel5.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(8)))), ((int)(((byte)(43)))));
             this.guna2Panel5.BorderColor = System.Drawing.Color.Maroon;
             this.guna2Panel5.BorderThickness = 7;
-            this.guna2Panel5.Controls.Add(this.guna2PictureBox11);
             this.guna2Panel5.Controls.Add(this.label6);
+            this.guna2Panel5.Controls.Add(this.EndDate);
+            this.guna2Panel5.Controls.Add(this.StartDate);
+            this.guna2Panel5.Controls.Add(this.guna2PictureBox11);
+            this.guna2Panel5.Controls.Add(this.Past6MonthCount);
             this.guna2Panel5.Controls.Add(this.label8);
             this.guna2Panel5.Location = new System.Drawing.Point(220, 205);
             this.guna2Panel5.Name = "guna2Panel5";
@@ -694,25 +706,25 @@
             this.guna2PictureBox11.TabStop = false;
             this.guna2PictureBox11.UseTransparentBackground = true;
             // 
-            // label6
+            // Past6MonthCount
             // 
-            this.label6.AutoSize = true;
-            this.label6.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label6.ForeColor = System.Drawing.Color.WhiteSmoke;
-            this.label6.Location = new System.Drawing.Point(158, 59);
-            this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(92, 31);
-            this.label6.TabIndex = 4;
-            this.label6.Text = "label6";
+            this.Past6MonthCount.AutoSize = true;
+            this.Past6MonthCount.Font = new System.Drawing.Font("Montserrat ExtraBold", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Past6MonthCount.ForeColor = System.Drawing.Color.WhiteSmoke;
+            this.Past6MonthCount.Location = new System.Drawing.Point(163, 50);
+            this.Past6MonthCount.Name = "Past6MonthCount";
+            this.Past6MonthCount.Size = new System.Drawing.Size(328, 44);
+            this.Past6MonthCount.TabIndex = 4;
+            this.Past6MonthCount.Text = "Past6MonthCount";
             // 
             // label8
             // 
             this.label8.AutoSize = true;
-            this.label8.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label8.Font = new System.Drawing.Font("Montserrat SemiBold", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label8.ForeColor = System.Drawing.Color.WhiteSmoke;
-            this.label8.Location = new System.Drawing.Point(47, 25);
+            this.label8.Location = new System.Drawing.Point(43, 25);
             this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(300, 24);
+            this.label8.Size = new System.Drawing.Size(318, 26);
             this.label8.TabIndex = 3;
             this.label8.Text = "Students Enrolled (Last 6 Mths)";
             // 
@@ -722,7 +734,7 @@
             this.guna2Panel6.BorderColor = System.Drawing.Color.Maroon;
             this.guna2Panel6.BorderThickness = 7;
             this.guna2Panel6.Controls.Add(this.guna2PictureBox12);
-            this.guna2Panel6.Controls.Add(this.label12);
+            this.guna2Panel6.Controls.Add(this.MostAdmittedClass);
             this.guna2Panel6.Controls.Add(this.label13);
             this.guna2Panel6.Location = new System.Drawing.Point(734, 205);
             this.guna2Panel6.Name = "guna2Panel6";
@@ -743,27 +755,27 @@
             this.guna2PictureBox12.TabStop = false;
             this.guna2PictureBox12.UseTransparentBackground = true;
             // 
-            // label12
+            // MostAdmittedClass
             // 
-            this.label12.AutoSize = true;
-            this.label12.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label12.ForeColor = System.Drawing.Color.WhiteSmoke;
-            this.label12.Location = new System.Drawing.Point(186, 59);
-            this.label12.Name = "label12";
-            this.label12.Size = new System.Drawing.Size(108, 31);
-            this.label12.TabIndex = 4;
-            this.label12.Text = "label12";
+            this.MostAdmittedClass.AutoSize = true;
+            this.MostAdmittedClass.Font = new System.Drawing.Font("Montserrat ExtraBold", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.MostAdmittedClass.ForeColor = System.Drawing.Color.WhiteSmoke;
+            this.MostAdmittedClass.Location = new System.Drawing.Point(157, 57);
+            this.MostAdmittedClass.Name = "MostAdmittedClass";
+            this.MostAdmittedClass.Size = new System.Drawing.Size(353, 44);
+            this.MostAdmittedClass.TabIndex = 4;
+            this.MostAdmittedClass.Text = "MostAdmittedClass";
             // 
             // label13
             // 
             this.label13.AutoSize = true;
-            this.label13.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label13.Font = new System.Drawing.Font("Montserrat SemiBold", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label13.ForeColor = System.Drawing.Color.WhiteSmoke;
-            this.label13.Location = new System.Drawing.Point(146, 25);
+            this.label13.Location = new System.Drawing.Point(95, 25);
             this.label13.Name = "label13";
-            this.label13.Size = new System.Drawing.Size(157, 24);
+            this.label13.Size = new System.Drawing.Size(248, 26);
             this.label13.TabIndex = 3;
-            this.label13.Text = "Most Admission";
+            this.label13.Text = "Most Admissioned Class";
             // 
             // guna2Button1
             // 
@@ -850,6 +862,71 @@
             this.DataGridEmployees.ThemeStyle.RowsStyle.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(239)))), ((int)(((byte)(135)))), ((int)(((byte)(125)))));
             this.DataGridEmployees.ThemeStyle.RowsStyle.SelectionForeColor = System.Drawing.Color.Black;
             // 
+            // StartDate
+            // 
+            this.StartDate.AutoSize = true;
+            this.StartDate.Font = new System.Drawing.Font("Montserrat SemiBold", 12F, System.Drawing.FontStyle.Bold);
+            this.StartDate.ForeColor = System.Drawing.Color.WhiteSmoke;
+            this.StartDate.Location = new System.Drawing.Point(69, 95);
+            this.StartDate.Name = "StartDate";
+            this.StartDate.Size = new System.Drawing.Size(91, 22);
+            this.StartDate.TabIndex = 5;
+            this.StartDate.Text = "StartDate";
+            // 
+            // EndDate
+            // 
+            this.EndDate.AutoSize = true;
+            this.EndDate.Font = new System.Drawing.Font("Montserrat SemiBold", 12F, System.Drawing.FontStyle.Bold);
+            this.EndDate.ForeColor = System.Drawing.Color.WhiteSmoke;
+            this.EndDate.Location = new System.Drawing.Point(220, 97);
+            this.EndDate.Name = "EndDate";
+            this.EndDate.Size = new System.Drawing.Size(83, 22);
+            this.EndDate.TabIndex = 6;
+            this.EndDate.Text = "EndDate";
+            // 
+            // label6
+            // 
+            this.label6.AutoSize = true;
+            this.label6.Font = new System.Drawing.Font("Montserrat SemiBold", 12F, System.Drawing.FontStyle.Bold);
+            this.label6.ForeColor = System.Drawing.Color.WhiteSmoke;
+            this.label6.Location = new System.Drawing.Point(183, 95);
+            this.label6.Name = "label6";
+            this.label6.Size = new System.Drawing.Size(27, 22);
+            this.label6.TabIndex = 7;
+            this.label6.Text = "to";
+            // 
+            // panel5
+            // 
+            this.panel5.BackColor = System.Drawing.Color.Transparent;
+            this.panel5.Controls.Add(this.guna2PictureBox13);
+            this.panel5.Controls.Add(this.OnHoldStudentsTab);
+            this.panel5.Location = new System.Drawing.Point(0, 407);
+            this.panel5.Name = "panel5";
+            this.panel5.Size = new System.Drawing.Size(212, 52);
+            this.panel5.TabIndex = 9;
+            // 
+            // guna2PictureBox13
+            // 
+            this.guna2PictureBox13.Image = ((System.Drawing.Image)(resources.GetObject("guna2PictureBox13.Image")));
+            this.guna2PictureBox13.ImageRotate = 0F;
+            this.guna2PictureBox13.Location = new System.Drawing.Point(12, 2);
+            this.guna2PictureBox13.Name = "guna2PictureBox13";
+            this.guna2PictureBox13.Size = new System.Drawing.Size(52, 47);
+            this.guna2PictureBox13.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage;
+            this.guna2PictureBox13.TabIndex = 1;
+            this.guna2PictureBox13.TabStop = false;
+            // 
+            // OnHoldStudentsTab
+            // 
+            this.OnHoldStudentsTab.AutoSize = true;
+            this.OnHoldStudentsTab.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.OnHoldStudentsTab.ForeColor = System.Drawing.Color.WhiteSmoke;
+            this.OnHoldStudentsTab.Location = new System.Drawing.Point(65, 13);
+            this.OnHoldStudentsTab.Name = "OnHoldStudentsTab";
+            this.OnHoldStudentsTab.Size = new System.Drawing.Size(130, 24);
+            this.OnHoldStudentsTab.TabIndex = 0;
+            this.OnHoldStudentsTab.Text = "Std. On Hold";
+            // 
             // AdminDashboardTab
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -916,6 +993,9 @@
             this.guna2Panel6.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox12)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.DataGridEmployees)).EndInit();
+            this.panel5.ResumeLayout(false);
+            this.panel5.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox13)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -968,14 +1048,20 @@
         private System.Windows.Forms.Label label29;
         private Guna.UI2.WinForms.Guna2Panel guna2Panel5;
         private Guna.UI2.WinForms.Guna2PictureBox guna2PictureBox11;
-        private System.Windows.Forms.Label label6;
+        private System.Windows.Forms.Label Past6MonthCount;
         private System.Windows.Forms.Label label8;
         private Guna.UI2.WinForms.Guna2Panel guna2Panel6;
         private Guna.UI2.WinForms.Guna2PictureBox guna2PictureBox12;
-        private System.Windows.Forms.Label label12;
+        private System.Windows.Forms.Label MostAdmittedClass;
         private System.Windows.Forms.Label label13;
         private Guna.UI2.WinForms.Guna2Button guna2Button1;
         private System.Windows.Forms.Label label14;
         private Guna.UI2.WinForms.Guna2DataGridView DataGridEmployees;
+        private System.Windows.Forms.Label label6;
+        private System.Windows.Forms.Label EndDate;
+        private System.Windows.Forms.Label StartDate;
+        private System.Windows.Forms.Panel panel5;
+        private Guna.UI2.WinForms.Guna2PictureBox guna2PictureBox13;
+        private System.Windows.Forms.Label OnHoldStudentsTab;
     }
 }
