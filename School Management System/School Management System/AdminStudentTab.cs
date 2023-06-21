@@ -33,8 +33,8 @@ namespace School_Management_System
             //con = new SqlConnection(connectionString);
         }
 
-        //readonly SqlConnection con = new SqlConnection(System.Configuration.ConfigurationManager.ConnectionStrings["dbcs"].ConnectionString);
-      SqlConnection  con = new SqlConnection("Data Source=DESKTOP-38NRAVC\\ALISERVER;Initial Catalog=SMS;Integrated Security=True");
+        readonly SqlConnection con = new SqlConnection(System.Configuration.ConfigurationManager.ConnectionStrings["dbcs"].ConnectionString);
+        //SqlConnection  con = new SqlConnection("Data Source=DESKTOP-38NRAVC\\ALISERVER;Initial Catalog=SMS;Integrated Security=True");
         private void LogoutTab_Click(object sender, EventArgs e)
         {
             Application.Exit();
@@ -106,20 +106,9 @@ namespace School_Management_System
 
         private void AddBtn_Click(object sender, EventArgs e)
         {
-            con.Open();
-            using (SqlCommand command = new SqlCommand("CreateStudent", con))
-            {
-                command.CommandType = System.Data.CommandType.StoredProcedure;
-                //command.Parameters.AddWithValue("@StudentID", IDTxt.Text);
-                command.Parameters.AddWithValue("@Name", NameTxt.Text);
-                command.Parameters.AddWithValue("@Phone", PhoneTxt.Text);
-                command.Parameters.AddWithValue("@Address", AddressTxt.Text);
-                command.ExecuteNonQuery();
-                con.Close();
-                LoadStudent();
-                clearFields();
-
-            }
+            AdminStudentAdd adminStudentAdd = new AdminStudentAdd();
+            adminStudentAdd.Show();
+            this.Hide();
         }
 
         private void UpdateBtn_Click(object sender, EventArgs e)
@@ -158,9 +147,44 @@ namespace School_Management_System
             clearFields();
         }
 
-        //private void panel1_Paint(object sender, PaintEventArgs e)
-        //{
 
-        //}
+
+        private void DashboardTabb_Click(object sender, EventArgs e)
+        {
+            AdminDashboardTab dt = new AdminDashboardTab();
+            dt.Show();
+            this.Hide();
+        }
+
+        private void TimeTableTab_Click(object sender, EventArgs e)
+        {
+            AdminTimeTableTab ttt = new AdminTimeTableTab();
+            ttt.Show();
+            this.Hide();
+        }
+
+        private void ExamsTab_Click(object sender, EventArgs e)
+        {
+            AdminExamsTab et = new AdminExamsTab();
+            et.Show();
+            this.Hide();
+        }
+
+        private void FilterBtn_Click(object sender, EventArgs e)
+        {
+            string querry = "Select S.StudentID, S.Name, S.Phone, S.Address, S.ClassID from Students S inner join Classes C on S.ClassID = C.ClassID where C.ClassName = '"+FilterTxt.SelectedItem.ToString()+"'";
+            SqlCommand cmd = new SqlCommand(querry, con);
+            SqlDataAdapter sd = new SqlDataAdapter(cmd);
+            DataTable dt = new DataTable();
+            sd.Fill(dt);
+            DataGrid.DataSource = dt;
+        }
+
+        private void OnHoldStudentsTab_Click(object sender, EventArgs e)
+        {
+            AdminOnHoldStudents adminOnHoldStudents = new AdminOnHoldStudents();
+            adminOnHoldStudents.Show();
+            this.Hide();
+        }
     }
 }

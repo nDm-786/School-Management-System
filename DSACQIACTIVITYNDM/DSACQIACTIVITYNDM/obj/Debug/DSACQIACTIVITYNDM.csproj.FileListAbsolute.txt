@@ -1,0 +1,8 @@
+C:\Users\Mr. Bhatti\source\repos\nDm-786\School-Management-System\DSACQIACTIVITYNDM\DSACQIACTIVITYNDM\bin\Debug\DSACQIACTIVITYNDM.exe.config
+C:\Users\Mr. Bhatti\source\repos\nDm-786\School-Management-System\DSACQIACTIVITYNDM\DSACQIACTIVITYNDM\bin\Debug\DSACQIACTIVITYNDM.exe
+C:\Users\Mr. Bhatti\source\repos\nDm-786\School-Management-System\DSACQIACTIVITYNDM\DSACQIACTIVITYNDM\bin\Debug\DSACQIACTIVITYNDM.pdb
+C:\Users\Mr. Bhatti\source\repos\nDm-786\School-Management-System\DSACQIACTIVITYNDM\DSACQIACTIVITYNDM\obj\Debug\DSACQIACTIVITYNDM.csproj.AssemblyReference.cache
+C:\Users\Mr. Bhatti\source\repos\nDm-786\School-Management-System\DSACQIACTIVITYNDM\DSACQIACTIVITYNDM\obj\Debug\DSACQIACTIVITYNDM.csproj.SuggestedBindingRedirects.cache
+C:\Users\Mr. Bhatti\source\repos\nDm-786\School-Management-System\DSACQIACTIVITYNDM\DSACQIACTIVITYNDM\obj\Debug\DSACQIACTIVITYNDM.csproj.CoreCompileInputs.cache
+C:\Users\Mr. Bhatti\source\repos\nDm-786\School-Management-System\DSACQIACTIVITYNDM\DSACQIACTIVITYNDM\obj\Debug\DSACQIACTIVITYNDM.exe
+C:\Users\Mr. Bhatti\source\repos\nDm-786\School-Management-System\DSACQIACTIVITYNDM\DSACQIACTIVITYNDM\obj\Debug\DSACQIACTIVITYNDM.pdb
