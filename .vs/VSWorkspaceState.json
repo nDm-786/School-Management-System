@@ -1,7 +1,9 @@
 {
   "ExpandedNodes": [
-    ""
+    "",
+    "\\Database Schema",
+    "\\School Management System\\School Management System"
   ],
-  "SelectedNode": "\\School Management System.sln",
+  "SelectedNode": "\\Database Schema\\DataBase.sql",
   "PreviewInSolutionExplorer": false
 }
