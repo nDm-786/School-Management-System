@@ -231,6 +231,18 @@ BEGIN
 END
 
 
+CREATE PROCEDURE GetAllTimeTables
+AS
+BEGIN
+    SELECT * FROM TimeTables;
+END;
 
+CREATE PROCEDURE GetAllExams
+AS
+BEGIN
+    SELECT * FROM Exams;
+END;
+
+insert into Admins (AdminID,Name,Password) Values (23, 'ARSALAN', 6969)
 
 
