@@ -46,5 +46,32 @@ namespace School_Management_System
             ttt.Show();
             this.Hide();
         }
+
+        private void OnHoldStudentsTab_Click(object sender, EventArgs e)
+        {
+            AdminOnHoldStudents adminOnHoldStudents = new AdminOnHoldStudents();
+            adminOnHoldStudents.Show();
+            this.Hide();
+        }
+
+        private void AdminExamsTab_Load(object sender, EventArgs e)
+        {
+            showExams();
+        }
+        private void showExams()
+        {
+            string querry = "exec GetAllExams";
+            SqlCommand cmd = new SqlCommand(querry, con);
+            SqlDataAdapter sd = new SqlDataAdapter(cmd);
+            DataTable dt = new DataTable();
+            sd.Fill(dt);
+            DataGrid.DataSource = dt;
+
+        }
+
+        private void LogoutBtn_Click(object sender, EventArgs e)
+        {
+            Application.Exit();
+        }
     }
 }

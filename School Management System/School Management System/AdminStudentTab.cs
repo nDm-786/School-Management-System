@@ -179,5 +179,12 @@ namespace School_Management_System
             sd.Fill(dt);
             DataGrid.DataSource = dt;
         }
+
+        private void OnHoldStudentsTab_Click(object sender, EventArgs e)
+        {
+            AdminOnHoldStudents adminOnHoldStudents = new AdminOnHoldStudents();
+            adminOnHoldStudents.Show();
+            this.Hide();
+        }
     }
 }

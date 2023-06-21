@@ -38,5 +38,12 @@ namespace School_Management_System
                 this.Hide();
             }
         }
+
+        private void LoginBtn_Click(object sender, EventArgs e)
+        {
+            SignIn signIn = new SignIn();
+            signIn.Show();
+            this.Hide();
+        }
     }
 }

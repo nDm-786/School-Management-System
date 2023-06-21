@@ -347,6 +347,7 @@
             this.DataGrid.ThemeStyle.RowsStyle.Height = 22;
             this.DataGrid.ThemeStyle.RowsStyle.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
             this.DataGrid.ThemeStyle.RowsStyle.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
+            this.DataGrid.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.DataGrid_CellContentClick);
             // 
             // label9
             // 
@@ -694,6 +695,7 @@
             this.OnHoldStudentsTab.Size = new System.Drawing.Size(130, 24);
             this.OnHoldStudentsTab.TabIndex = 0;
             this.OnHoldStudentsTab.Text = "Std. On Hold";
+            this.OnHoldStudentsTab.Click += new System.EventHandler(this.OnHoldStudentsTab_Click);
             // 
             // AdminEmployeesTab
             // 

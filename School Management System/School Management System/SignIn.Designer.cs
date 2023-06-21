@@ -42,7 +42,7 @@
             this.guna2PictureBox1 = new Guna.UI2.WinForms.Guna2PictureBox();
             this.RegisterBtn = new Guna.UI2.WinForms.Guna2Button();
             this.guna2VSeparator1 = new Guna.UI2.WinForms.Guna2VSeparator();
-            this.guna2RadioButton1 = new Guna.UI2.WinForms.Guna2RadioButton();
+            this.adminRadButton = new Guna.UI2.WinForms.Guna2RadioButton();
             this.guna2RadioButton2 = new Guna.UI2.WinForms.Guna2RadioButton();
             this.guna2RadioButton3 = new Guna.UI2.WinForms.Guna2RadioButton();
             this.panel1.SuspendLayout();
@@ -64,6 +64,7 @@
             this.SubmitBtn.Size = new System.Drawing.Size(135, 37);
             this.SubmitBtn.TabIndex = 0;
             this.SubmitBtn.Text = "Submit";
+            this.SubmitBtn.Click += new System.EventHandler(this.SubmitBtn_Click);
             // 
             // label1
             // 
@@ -213,6 +214,7 @@
             this.RegisterBtn.Size = new System.Drawing.Size(135, 37);
             this.RegisterBtn.TabIndex = 8;
             this.RegisterBtn.Text = "Register";
+            this.RegisterBtn.Click += new System.EventHandler(this.RegisterBtn_Click);
             // 
             // guna2VSeparator1
             // 
@@ -223,23 +225,23 @@
             this.guna2VSeparator1.Size = new System.Drawing.Size(8, 482);
             this.guna2VSeparator1.TabIndex = 9;
             // 
-            // guna2RadioButton1
+            // adminRadButton
             // 
-            this.guna2RadioButton1.AutoSize = true;
-            this.guna2RadioButton1.CheckedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.guna2RadioButton1.CheckedState.BorderThickness = 0;
-            this.guna2RadioButton1.CheckedState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.guna2RadioButton1.CheckedState.InnerColor = System.Drawing.Color.White;
-            this.guna2RadioButton1.CheckedState.InnerOffset = -4;
-            this.guna2RadioButton1.Location = new System.Drawing.Point(655, 275);
-            this.guna2RadioButton1.Name = "guna2RadioButton1";
-            this.guna2RadioButton1.Size = new System.Drawing.Size(54, 17);
-            this.guna2RadioButton1.TabIndex = 10;
-            this.guna2RadioButton1.Text = "Admin";
-            this.guna2RadioButton1.UncheckedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(125)))), ((int)(((byte)(137)))), ((int)(((byte)(149)))));
-            this.guna2RadioButton1.UncheckedState.BorderThickness = 2;
-            this.guna2RadioButton1.UncheckedState.FillColor = System.Drawing.Color.Transparent;
-            this.guna2RadioButton1.UncheckedState.InnerColor = System.Drawing.Color.Transparent;
+            this.adminRadButton.AutoSize = true;
+            this.adminRadButton.CheckedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.adminRadButton.CheckedState.BorderThickness = 0;
+            this.adminRadButton.CheckedState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.adminRadButton.CheckedState.InnerColor = System.Drawing.Color.White;
+            this.adminRadButton.CheckedState.InnerOffset = -4;
+            this.adminRadButton.Location = new System.Drawing.Point(655, 275);
+            this.adminRadButton.Name = "adminRadButton";
+            this.adminRadButton.Size = new System.Drawing.Size(54, 17);
+            this.adminRadButton.TabIndex = 10;
+            this.adminRadButton.Text = "Admin";
+            this.adminRadButton.UncheckedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(125)))), ((int)(((byte)(137)))), ((int)(((byte)(149)))));
+            this.adminRadButton.UncheckedState.BorderThickness = 2;
+            this.adminRadButton.UncheckedState.FillColor = System.Drawing.Color.Transparent;
+            this.adminRadButton.UncheckedState.InnerColor = System.Drawing.Color.Transparent;
             // 
             // guna2RadioButton2
             // 
@@ -284,7 +286,7 @@
             this.ClientSize = new System.Drawing.Size(907, 477);
             this.Controls.Add(this.guna2RadioButton3);
             this.Controls.Add(this.guna2RadioButton2);
-            this.Controls.Add(this.guna2RadioButton1);
+            this.Controls.Add(this.adminRadButton);
             this.Controls.Add(this.guna2VSeparator1);
             this.Controls.Add(this.RegisterBtn);
             this.Controls.Add(this.panel1);
@@ -321,7 +323,7 @@
         private System.Windows.Forms.Label label5;
         private Guna.UI2.WinForms.Guna2Button RegisterBtn;
         private Guna.UI2.WinForms.Guna2VSeparator guna2VSeparator1;
-        private Guna.UI2.WinForms.Guna2RadioButton guna2RadioButton1;
+        private Guna.UI2.WinForms.Guna2RadioButton adminRadButton;
         private Guna.UI2.WinForms.Guna2RadioButton guna2RadioButton2;
         private Guna.UI2.WinForms.Guna2RadioButton guna2RadioButton3;
 

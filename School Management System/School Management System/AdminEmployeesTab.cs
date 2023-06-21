@@ -8,6 +8,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using System.Windows.Input;
 
 namespace School_Management_System
 {
@@ -50,7 +51,7 @@ namespace School_Management_System
         }
         private void showEmployee()
         {
-            string querry = "exec GetTeachers";
+            string querry = "exec GetAllEmployees";
             SqlCommand cmd = new SqlCommand(querry, con);
             SqlDataAdapter sd = new SqlDataAdapter(cmd);
             DataTable dt = new DataTable();
@@ -70,13 +71,18 @@ namespace School_Management_System
         private void AddBtn_Click(object sender, EventArgs e)
         {
             con.Open();
-            using (SqlCommand command = new SqlCommand("CreateTeacher", con))
+            using (SqlCommand command = new SqlCommand("InsertEmployee", con))
             {
                 command.CommandType = System.Data.CommandType.StoredProcedure;
-                command.Parameters.AddWithValue("@StudentID", IDTxt.Text);
+                command.Parameters.AddWithValue("@EmployeeID", IDTxt.Text);
                 command.Parameters.AddWithValue("@Name", NameTxt.Text);
+                command.Parameters.AddWithValue("@Age", 21);
                 command.Parameters.AddWithValue("@Phone", PhoneTxt.Text);
                 command.Parameters.AddWithValue("@Address", AddressTxt.Text);
+                command.Parameters.AddWithValue("@Gender", "Male");
+                command.Parameters.AddWithValue("@RoleID", 2);
+                command.Parameters.AddWithValue("@Password", 1786);
+
                 command.ExecuteNonQuery();
                 con.Close();
                 showEmployee();
@@ -88,10 +94,10 @@ namespace School_Management_System
         private void DeleteBtn_Click(object sender, EventArgs e)
         {
             con.Open();
-            using (SqlCommand command = new SqlCommand("DeleteTeacher", con))
+            using (SqlCommand command = new SqlCommand("DeleteEmployee", con))
             {
                 command.CommandType = System.Data.CommandType.StoredProcedure;
-                command.Parameters.AddWithValue("@StudentID", IDTxt.Text);
+                command.Parameters.AddWithValue("@EmployeeID", IDTxt.Text);
                 command.ExecuteNonQuery();
                 con.Close();
                 showEmployee();
@@ -102,10 +108,10 @@ namespace School_Management_System
         private void UpdateBtn_Click(object sender, EventArgs e)
         {
             con.Open();
-            using (SqlCommand command = new SqlCommand("UpdateTeacher", con))
+            using (SqlCommand command = new SqlCommand("UpdateEmployee", con))
             {
                 command.CommandType = System.Data.CommandType.StoredProcedure;
-                command.Parameters.AddWithValue("@StudentID", IDTxt.Text);
+                command.Parameters.AddWithValue("@EmployeeID", IDTxt.Text);
                 command.Parameters.AddWithValue("@Name", NameTxt.Text);
                 command.Parameters.AddWithValue("@Phone", PhoneTxt.Text);
                 command.Parameters.AddWithValue("@Address", AddressTxt.Text);
@@ -135,6 +141,29 @@ namespace School_Management_System
             AdminExamsTab et = new AdminExamsTab();
             et.Show();
             this.Hide();
+        }
+
+        private void OnHoldStudentsTab_Click(object sender, EventArgs e)
+        {
+            AdminOnHoldStudents adminOnHoldStudents = new AdminOnHoldStudents();
+            adminOnHoldStudents.Show();
+            this.Hide();
+        }
+        int key = 0;
+        private void DataGrid_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+            IDTxt.Text = DataGrid.SelectedRows[0].Cells[0].Value.ToString();
+            NameTxt.Text = DataGrid.SelectedRows[0].Cells[1].Value.ToString();
+            PhoneTxt.Text = DataGrid.SelectedRows[0].Cells[3].Value.ToString();
+            AddressTxt.Text = DataGrid.SelectedRows[0].Cells[4].Value.ToString();
+            if (NameTxt.Text == "")
+            {
+                key = 0;
+            }
+            else
+            {
+                key = Convert.ToInt32(DataGrid.SelectedRows[0].Cells[0].Value.ToString());
+            }
         }
     }
 }

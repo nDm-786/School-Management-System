@@ -46,6 +46,8 @@ namespace School_Management_System
             updateEmployeeCount();
             updateEnrollCount();
             updateClassWithMostAdmissions();
+            updateBestPerformingClass();
+            updateOnHoldStudents();
         }
         public void updateStudentCount()
         {
@@ -78,12 +80,30 @@ namespace School_Management_System
         }
         public void updateClassWithMostAdmissions()
         {
-            string querry = "SELECT * FROM ClassWithMostAdmissions;;";
+            string querry = "SELECT * FROM ClassWithMostAdmissions;";
             SqlCommand cmd = new SqlCommand(querry, con);
             SqlDataAdapter sd = new SqlDataAdapter(cmd);
             DataTable dt = new DataTable();
             sd.Fill(dt);
             MostAdmittedClass.Text = dt.Rows[0][1].ToString();
+        }
+        public void updateBestPerformingClass()
+        {
+            string querry = "Select ClassName from Classes where ClassID = (select ClassID from BestPerformingClass);";
+            SqlCommand cmd = new SqlCommand(querry, con);
+            SqlDataAdapter sd = new SqlDataAdapter(cmd);
+            DataTable dt = new DataTable();
+            sd.Fill(dt);
+            BestPerformance.Text = dt.Rows[0][0].ToString();
+        }
+        public void updateOnHoldStudents()
+        {
+            string querry = "select * from GetOnHoldStudents1;";
+            SqlCommand cmd = new SqlCommand(querry, con);
+            SqlDataAdapter sd = new SqlDataAdapter(cmd);
+            DataTable dt = new DataTable();
+            sd.Fill(dt);
+            OnHoldStdCount.Text = dt.Rows[0][0].ToString();
         }
         private void StudentsTabb_Click(object sender, EventArgs e)
         {
@@ -110,6 +130,18 @@ namespace School_Management_System
         {
             AdminExamsTab et = new AdminExamsTab();
             et.Show();
+            this.Hide();
+        }
+
+        private void LogoutBtn_Click(object sender, EventArgs e)
+        {
+            Application.Exit();
+        }
+
+        private void OnHoldStudentsTab_Click(object sender, EventArgs e)
+        {
+            AdminOnHoldStudents adminOnHoldStudents = new AdminOnHoldStudents();
+            adminOnHoldStudents.Show();
             this.Hide();
         }
     }
