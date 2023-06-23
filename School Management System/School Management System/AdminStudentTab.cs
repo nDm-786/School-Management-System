@@ -13,7 +13,6 @@ using System.Configuration;
 using System.Web.UI.WebControls;
 using System.Net;
 using System.Xml.Linq;
-using System.Configuration;
 using System.Runtime.Serialization.Formatters;
 
 // ...

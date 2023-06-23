@@ -17,7 +17,7 @@ namespace School_Management_System
         {
             InitializeComponent();
         }
-        readonly SqlConnection con = new SqlConnection(@"Data Source=(local);Initial Catalog=SMS;Integrated Security=True");
+        readonly SqlConnection con = new SqlConnection(@"Data Source=.\;Initial Catalog=SMS;Integrated Security=True");
 
         public void loadgridviews()
         {
