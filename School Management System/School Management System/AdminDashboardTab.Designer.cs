@@ -29,12 +29,21 @@
         protected void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(AdminDashboardTab));
+<<<<<<< HEAD
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle4 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle5 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle6 = new System.Windows.Forms.DataGridViewCellStyle();
+=======
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle31 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle32 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle33 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle34 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle35 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle36 = new System.Windows.Forms.DataGridViewCellStyle();
+>>>>>>> 835c7f472674a291cbc9de3d9ee38716b03a363b
             this.ExamsTab = new System.Windows.Forms.Label();
             this.guna2PictureBox2 = new Guna.UI2.WinForms.Guna2PictureBox();
             this.guna2PictureBox3 = new Guna.UI2.WinForms.Guna2PictureBox();
@@ -76,19 +85,25 @@
             this.label11 = new System.Windows.Forms.Label();
             this.guna2Panel4 = new Guna.UI2.WinForms.Guna2Panel();
             this.guna2PictureBox10 = new Guna.UI2.WinForms.Guna2PictureBox();
-            this.MostAdmissionCount = new System.Windows.Forms.Label();
+            this.BestPerformance = new System.Windows.Forms.Label();
             this.label29 = new System.Windows.Forms.Label();
             this.guna2Panel5 = new Guna.UI2.WinForms.Guna2Panel();
             this.guna2PictureBox11 = new Guna.UI2.WinForms.Guna2PictureBox();
-            this.label6 = new System.Windows.Forms.Label();
+            this.Past6MonthCount = new System.Windows.Forms.Label();
             this.label8 = new System.Windows.Forms.Label();
             this.guna2Panel6 = new Guna.UI2.WinForms.Guna2Panel();
             this.guna2PictureBox12 = new Guna.UI2.WinForms.Guna2PictureBox();
-            this.label12 = new System.Windows.Forms.Label();
+            this.MostAdmittedClass = new System.Windows.Forms.Label();
             this.label13 = new System.Windows.Forms.Label();
             this.guna2Button1 = new Guna.UI2.WinForms.Guna2Button();
             this.label14 = new System.Windows.Forms.Label();
             this.DataGridEmployees = new Guna.UI2.WinForms.Guna2DataGridView();
+            this.StartDate = new System.Windows.Forms.Label();
+            this.EndDate = new System.Windows.Forms.Label();
+            this.label6 = new System.Windows.Forms.Label();
+            this.panel5 = new System.Windows.Forms.Panel();
+            this.guna2PictureBox13 = new Guna.UI2.WinForms.Guna2PictureBox();
+            this.OnHoldStudentsTab = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox3)).BeginInit();
             this.panel4.SuspendLayout();
@@ -118,6 +133,8 @@
             this.guna2Panel6.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox12)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.DataGridEmployees)).BeginInit();
+            this.panel5.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox13)).BeginInit();
             this.SuspendLayout();
             // 
             // ExamsTab
@@ -359,6 +376,7 @@
             // panel1
             // 
             this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(8)))), ((int)(((byte)(43)))));
+            this.panel1.Controls.Add(this.panel5);
             this.panel1.Controls.Add(this.ExamTab);
             this.panel1.Controls.Add(this.panel4);
             this.panel1.Controls.Add(this.EmployeeTab);
@@ -395,6 +413,7 @@
             this.LogoutBtn.Size = new System.Drawing.Size(109, 33);
             this.LogoutBtn.TabIndex = 2;
             this.LogoutBtn.Text = "Logout";
+            this.LogoutBtn.Click += new System.EventHandler(this.LogoutBtn_Click);
             // 
             // PrintBtn
             // 
@@ -430,6 +449,7 @@
             this.DataGridStudents.AllowUserToAddRows = false;
             this.DataGridStudents.AllowUserToDeleteRows = false;
             this.DataGridStudents.AllowUserToResizeRows = false;
+<<<<<<< HEAD
             dataGridViewCellStyle1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(247)))), ((int)(((byte)(201)))), ((int)(((byte)(197)))));
             this.DataGridStudents.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle1;
             dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
@@ -450,6 +470,28 @@
             dataGridViewCellStyle3.SelectionForeColor = System.Drawing.Color.Black;
             dataGridViewCellStyle3.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
             this.DataGridStudents.DefaultCellStyle = dataGridViewCellStyle3;
+=======
+            dataGridViewCellStyle31.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(247)))), ((int)(((byte)(201)))), ((int)(((byte)(197)))));
+            this.DataGridStudents.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle31;
+            dataGridViewCellStyle32.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle32.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(76)))), ((int)(((byte)(60)))));
+            dataGridViewCellStyle32.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle32.ForeColor = System.Drawing.Color.White;
+            dataGridViewCellStyle32.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle32.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle32.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.DataGridStudents.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle32;
+            this.DataGridStudents.ColumnHeadersHeight = 25;
+            this.DataGridStudents.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.EnableResizing;
+            dataGridViewCellStyle33.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle33.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(249)))), ((int)(((byte)(219)))), ((int)(((byte)(216)))));
+            dataGridViewCellStyle33.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle33.ForeColor = System.Drawing.Color.Black;
+            dataGridViewCellStyle33.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(239)))), ((int)(((byte)(135)))), ((int)(((byte)(125)))));
+            dataGridViewCellStyle33.SelectionForeColor = System.Drawing.Color.Black;
+            dataGridViewCellStyle33.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.DataGridStudents.DefaultCellStyle = dataGridViewCellStyle33;
+>>>>>>> 835c7f472674a291cbc9de3d9ee38716b03a363b
             this.DataGridStudents.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(245)))), ((int)(((byte)(192)))), ((int)(((byte)(188)))));
             this.DataGridStudents.Location = new System.Drawing.Point(330, 592);
             this.DataGridStudents.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
@@ -514,24 +556,36 @@
             // StudentCount
             // 
             this.StudentCount.AutoSize = true;
-            this.StudentCount.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.StudentCount.Font = new System.Drawing.Font("Montserrat ExtraBold", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.StudentCount.ForeColor = System.Drawing.Color.WhiteSmoke;
+<<<<<<< HEAD
             this.StudentCount.Location = new System.Drawing.Point(39, 82);
             this.StudentCount.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.StudentCount.Name = "StudentCount";
             this.StudentCount.Size = new System.Drawing.Size(199, 47);
+=======
+            this.StudentCount.Location = new System.Drawing.Point(81, 47);
+            this.StudentCount.Name = "StudentCount";
+            this.StudentCount.Size = new System.Drawing.Size(177, 44);
+>>>>>>> 835c7f472674a291cbc9de3d9ee38716b03a363b
             this.StudentCount.TabIndex = 4;
             this.StudentCount.Text = "StdCount";
             // 
             // label4
             // 
             this.label4.AutoSize = true;
-            this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label4.Font = new System.Drawing.Font("Montserrat SemiBold", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label4.ForeColor = System.Drawing.Color.WhiteSmoke;
+<<<<<<< HEAD
             this.label4.Location = new System.Drawing.Point(108, 25);
             this.label4.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(137, 33);
+=======
+            this.label4.Location = new System.Drawing.Point(59, 17);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(101, 26);
+>>>>>>> 835c7f472674a291cbc9de3d9ee38716b03a363b
             this.label4.TabIndex = 3;
             this.label4.Text = "Students";
             // 
@@ -579,24 +633,36 @@
             // EmployeeCount
             // 
             this.EmployeeCount.AutoSize = true;
-            this.EmployeeCount.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.EmployeeCount.Font = new System.Drawing.Font("Montserrat ExtraBold", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.EmployeeCount.ForeColor = System.Drawing.Color.WhiteSmoke;
+<<<<<<< HEAD
             this.EmployeeCount.Location = new System.Drawing.Point(39, 82);
             this.EmployeeCount.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.EmployeeCount.Name = "EmployeeCount";
             this.EmployeeCount.Size = new System.Drawing.Size(222, 47);
+=======
+            this.EmployeeCount.Location = new System.Drawing.Point(77, 47);
+            this.EmployeeCount.Name = "EmployeeCount";
+            this.EmployeeCount.Size = new System.Drawing.Size(198, 44);
+>>>>>>> 835c7f472674a291cbc9de3d9ee38716b03a363b
             this.EmployeeCount.TabIndex = 4;
             this.EmployeeCount.Text = "EmpCount";
             // 
             // label7
             // 
             this.label7.AutoSize = true;
-            this.label7.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label7.Font = new System.Drawing.Font("Montserrat SemiBold", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label7.ForeColor = System.Drawing.Color.WhiteSmoke;
+<<<<<<< HEAD
             this.label7.Location = new System.Drawing.Point(102, 25);
             this.label7.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label7.Name = "label7";
             this.label7.Size = new System.Drawing.Size(169, 33);
+=======
+            this.label7.Location = new System.Drawing.Point(48, 17);
+            this.label7.Name = "label7";
+            this.label7.Size = new System.Drawing.Size(120, 26);
+>>>>>>> 835c7f472674a291cbc9de3d9ee38716b03a363b
             this.label7.TabIndex = 3;
             this.label7.Text = "Employees";
             // 
@@ -632,24 +698,36 @@
             // OnHoldStdCount
             // 
             this.OnHoldStdCount.AutoSize = true;
-            this.OnHoldStdCount.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.OnHoldStdCount.Font = new System.Drawing.Font("Montserrat ExtraBold", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.OnHoldStdCount.ForeColor = System.Drawing.Color.WhiteSmoke;
+<<<<<<< HEAD
             this.OnHoldStdCount.Location = new System.Drawing.Point(39, 82);
             this.OnHoldStdCount.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.OnHoldStdCount.Name = "OnHoldStdCount";
             this.OnHoldStdCount.Size = new System.Drawing.Size(346, 47);
+=======
+            this.OnHoldStdCount.Location = new System.Drawing.Point(83, 47);
+            this.OnHoldStdCount.Name = "OnHoldStdCount";
+            this.OnHoldStdCount.Size = new System.Drawing.Size(305, 44);
+>>>>>>> 835c7f472674a291cbc9de3d9ee38716b03a363b
             this.OnHoldStdCount.TabIndex = 4;
             this.OnHoldStdCount.Text = "OnHoldStdCount";
             // 
             // label11
             // 
             this.label11.AutoSize = true;
-            this.label11.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label11.Font = new System.Drawing.Font("Montserrat SemiBold", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label11.ForeColor = System.Drawing.Color.WhiteSmoke;
+<<<<<<< HEAD
             this.label11.Location = new System.Drawing.Point(93, 25);
             this.label11.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label11.Name = "label11";
             this.label11.Size = new System.Drawing.Size(210, 33);
+=======
+            this.label11.Location = new System.Drawing.Point(40, 15);
+            this.label11.Name = "label11";
+            this.label11.Size = new System.Drawing.Size(148, 26);
+>>>>>>> 835c7f472674a291cbc9de3d9ee38716b03a363b
             this.label11.TabIndex = 3;
             this.label11.Text = "Adm. On Hold";
             // 
@@ -659,7 +737,7 @@
             this.guna2Panel4.BorderColor = System.Drawing.Color.Maroon;
             this.guna2Panel4.BorderThickness = 7;
             this.guna2Panel4.Controls.Add(this.guna2PictureBox10);
-            this.guna2Panel4.Controls.Add(this.MostAdmissionCount);
+            this.guna2Panel4.Controls.Add(this.BestPerformance);
             this.guna2Panel4.Controls.Add(this.label29);
             this.guna2Panel4.Location = new System.Drawing.Point(1101, 120);
             this.guna2Panel4.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
@@ -682,8 +760,9 @@
             this.guna2PictureBox10.TabStop = false;
             this.guna2PictureBox10.UseTransparentBackground = true;
             // 
-            // MostAdmissionCount
+            // BestPerformance
             // 
+<<<<<<< HEAD
             this.MostAdmissionCount.AutoSize = true;
             this.MostAdmissionCount.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.MostAdmissionCount.ForeColor = System.Drawing.Color.WhiteSmoke;
@@ -693,26 +772,45 @@
             this.MostAdmissionCount.Size = new System.Drawing.Size(429, 47);
             this.MostAdmissionCount.TabIndex = 4;
             this.MostAdmissionCount.Text = "MostAdmissionCount";
+=======
+            this.BestPerformance.AutoSize = true;
+            this.BestPerformance.Font = new System.Drawing.Font("Montserrat ExtraBold", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.BestPerformance.ForeColor = System.Drawing.Color.WhiteSmoke;
+            this.BestPerformance.Location = new System.Drawing.Point(22, 50);
+            this.BestPerformance.Name = "BestPerformance";
+            this.BestPerformance.Size = new System.Drawing.Size(319, 44);
+            this.BestPerformance.TabIndex = 4;
+            this.BestPerformance.Text = "BestPerformance";
+>>>>>>> 835c7f472674a291cbc9de3d9ee38716b03a363b
             // 
             // label29
             // 
             this.label29.AutoSize = true;
-            this.label29.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label29.Font = new System.Drawing.Font("Montserrat SemiBold", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label29.ForeColor = System.Drawing.Color.WhiteSmoke;
+<<<<<<< HEAD
             this.label29.Location = new System.Drawing.Point(82, 25);
             this.label29.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label29.Name = "label29";
             this.label29.Size = new System.Drawing.Size(236, 33);
+=======
+            this.label29.Location = new System.Drawing.Point(17, 16);
+            this.label29.Name = "label29";
+            this.label29.Size = new System.Drawing.Size(229, 26);
+>>>>>>> 835c7f472674a291cbc9de3d9ee38716b03a363b
             this.label29.TabIndex = 3;
-            this.label29.Text = "Most Admission";
+            this.label29.Text = "Best Performing Class";
             // 
             // guna2Panel5
             // 
             this.guna2Panel5.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(8)))), ((int)(((byte)(43)))));
             this.guna2Panel5.BorderColor = System.Drawing.Color.Maroon;
             this.guna2Panel5.BorderThickness = 7;
-            this.guna2Panel5.Controls.Add(this.guna2PictureBox11);
             this.guna2Panel5.Controls.Add(this.label6);
+            this.guna2Panel5.Controls.Add(this.EndDate);
+            this.guna2Panel5.Controls.Add(this.StartDate);
+            this.guna2Panel5.Controls.Add(this.guna2PictureBox11);
+            this.guna2Panel5.Controls.Add(this.Past6MonthCount);
             this.guna2Panel5.Controls.Add(this.label8);
             this.guna2Panel5.Location = new System.Drawing.Point(330, 315);
             this.guna2Panel5.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
@@ -735,8 +833,9 @@
             this.guna2PictureBox11.TabStop = false;
             this.guna2PictureBox11.UseTransparentBackground = true;
             // 
-            // label6
+            // Past6MonthCount
             // 
+<<<<<<< HEAD
             this.label6.AutoSize = true;
             this.label6.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label6.ForeColor = System.Drawing.Color.WhiteSmoke;
@@ -746,16 +845,32 @@
             this.label6.Size = new System.Drawing.Size(138, 47);
             this.label6.TabIndex = 4;
             this.label6.Text = "label6";
+=======
+            this.Past6MonthCount.AutoSize = true;
+            this.Past6MonthCount.Font = new System.Drawing.Font("Montserrat ExtraBold", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Past6MonthCount.ForeColor = System.Drawing.Color.WhiteSmoke;
+            this.Past6MonthCount.Location = new System.Drawing.Point(163, 50);
+            this.Past6MonthCount.Name = "Past6MonthCount";
+            this.Past6MonthCount.Size = new System.Drawing.Size(328, 44);
+            this.Past6MonthCount.TabIndex = 4;
+            this.Past6MonthCount.Text = "Past6MonthCount";
+>>>>>>> 835c7f472674a291cbc9de3d9ee38716b03a363b
             // 
             // label8
             // 
             this.label8.AutoSize = true;
-            this.label8.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label8.Font = new System.Drawing.Font("Montserrat SemiBold", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label8.ForeColor = System.Drawing.Color.WhiteSmoke;
+<<<<<<< HEAD
             this.label8.Location = new System.Drawing.Point(70, 38);
             this.label8.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label8.Name = "label8";
             this.label8.Size = new System.Drawing.Size(453, 33);
+=======
+            this.label8.Location = new System.Drawing.Point(43, 25);
+            this.label8.Name = "label8";
+            this.label8.Size = new System.Drawing.Size(318, 26);
+>>>>>>> 835c7f472674a291cbc9de3d9ee38716b03a363b
             this.label8.TabIndex = 3;
             this.label8.Text = "Students Enrolled (Last 6 Mths)";
             // 
@@ -765,7 +880,7 @@
             this.guna2Panel6.BorderColor = System.Drawing.Color.Maroon;
             this.guna2Panel6.BorderThickness = 7;
             this.guna2Panel6.Controls.Add(this.guna2PictureBox12);
-            this.guna2Panel6.Controls.Add(this.label12);
+            this.guna2Panel6.Controls.Add(this.MostAdmittedClass);
             this.guna2Panel6.Controls.Add(this.label13);
             this.guna2Panel6.Location = new System.Drawing.Point(1101, 315);
             this.guna2Panel6.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
@@ -788,8 +903,9 @@
             this.guna2PictureBox12.TabStop = false;
             this.guna2PictureBox12.UseTransparentBackground = true;
             // 
-            // label12
+            // MostAdmittedClass
             // 
+<<<<<<< HEAD
             this.label12.AutoSize = true;
             this.label12.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label12.ForeColor = System.Drawing.Color.WhiteSmoke;
@@ -799,18 +915,34 @@
             this.label12.Size = new System.Drawing.Size(162, 47);
             this.label12.TabIndex = 4;
             this.label12.Text = "label12";
+=======
+            this.MostAdmittedClass.AutoSize = true;
+            this.MostAdmittedClass.Font = new System.Drawing.Font("Montserrat ExtraBold", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.MostAdmittedClass.ForeColor = System.Drawing.Color.WhiteSmoke;
+            this.MostAdmittedClass.Location = new System.Drawing.Point(157, 57);
+            this.MostAdmittedClass.Name = "MostAdmittedClass";
+            this.MostAdmittedClass.Size = new System.Drawing.Size(353, 44);
+            this.MostAdmittedClass.TabIndex = 4;
+            this.MostAdmittedClass.Text = "MostAdmittedClass";
+>>>>>>> 835c7f472674a291cbc9de3d9ee38716b03a363b
             // 
             // label13
             // 
             this.label13.AutoSize = true;
-            this.label13.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label13.Font = new System.Drawing.Font("Montserrat SemiBold", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label13.ForeColor = System.Drawing.Color.WhiteSmoke;
+<<<<<<< HEAD
             this.label13.Location = new System.Drawing.Point(219, 38);
             this.label13.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label13.Name = "label13";
             this.label13.Size = new System.Drawing.Size(236, 33);
+=======
+            this.label13.Location = new System.Drawing.Point(95, 25);
+            this.label13.Name = "label13";
+            this.label13.Size = new System.Drawing.Size(248, 26);
+>>>>>>> 835c7f472674a291cbc9de3d9ee38716b03a363b
             this.label13.TabIndex = 3;
-            this.label13.Text = "Most Admission";
+            this.label13.Text = "Most Admissioned Class";
             // 
             // guna2Button1
             // 
@@ -846,6 +978,7 @@
             this.DataGridEmployees.AllowUserToAddRows = false;
             this.DataGridEmployees.AllowUserToDeleteRows = false;
             this.DataGridEmployees.AllowUserToResizeRows = false;
+<<<<<<< HEAD
             dataGridViewCellStyle4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(247)))), ((int)(((byte)(201)))), ((int)(((byte)(197)))));
             this.DataGridEmployees.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle4;
             dataGridViewCellStyle5.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
@@ -866,6 +999,28 @@
             dataGridViewCellStyle6.SelectionForeColor = System.Drawing.Color.Black;
             dataGridViewCellStyle6.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
             this.DataGridEmployees.DefaultCellStyle = dataGridViewCellStyle6;
+=======
+            dataGridViewCellStyle34.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(247)))), ((int)(((byte)(201)))), ((int)(((byte)(197)))));
+            this.DataGridEmployees.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle34;
+            dataGridViewCellStyle35.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle35.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(76)))), ((int)(((byte)(60)))));
+            dataGridViewCellStyle35.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle35.ForeColor = System.Drawing.Color.White;
+            dataGridViewCellStyle35.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle35.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle35.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.DataGridEmployees.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle35;
+            this.DataGridEmployees.ColumnHeadersHeight = 25;
+            this.DataGridEmployees.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.EnableResizing;
+            dataGridViewCellStyle36.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle36.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(249)))), ((int)(((byte)(219)))), ((int)(((byte)(216)))));
+            dataGridViewCellStyle36.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle36.ForeColor = System.Drawing.Color.Black;
+            dataGridViewCellStyle36.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(239)))), ((int)(((byte)(135)))), ((int)(((byte)(125)))));
+            dataGridViewCellStyle36.SelectionForeColor = System.Drawing.Color.Black;
+            dataGridViewCellStyle36.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.DataGridEmployees.DefaultCellStyle = dataGridViewCellStyle36;
+>>>>>>> 835c7f472674a291cbc9de3d9ee38716b03a363b
             this.DataGridEmployees.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(245)))), ((int)(((byte)(192)))), ((int)(((byte)(188)))));
             this.DataGridEmployees.Location = new System.Drawing.Point(328, 915);
             this.DataGridEmployees.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
@@ -898,6 +1053,72 @@
             this.DataGridEmployees.ThemeStyle.RowsStyle.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(239)))), ((int)(((byte)(135)))), ((int)(((byte)(125)))));
             this.DataGridEmployees.ThemeStyle.RowsStyle.SelectionForeColor = System.Drawing.Color.Black;
             // 
+            // StartDate
+            // 
+            this.StartDate.AutoSize = true;
+            this.StartDate.Font = new System.Drawing.Font("Montserrat SemiBold", 12F, System.Drawing.FontStyle.Bold);
+            this.StartDate.ForeColor = System.Drawing.Color.WhiteSmoke;
+            this.StartDate.Location = new System.Drawing.Point(69, 95);
+            this.StartDate.Name = "StartDate";
+            this.StartDate.Size = new System.Drawing.Size(91, 22);
+            this.StartDate.TabIndex = 5;
+            this.StartDate.Text = "StartDate";
+            // 
+            // EndDate
+            // 
+            this.EndDate.AutoSize = true;
+            this.EndDate.Font = new System.Drawing.Font("Montserrat SemiBold", 12F, System.Drawing.FontStyle.Bold);
+            this.EndDate.ForeColor = System.Drawing.Color.WhiteSmoke;
+            this.EndDate.Location = new System.Drawing.Point(220, 97);
+            this.EndDate.Name = "EndDate";
+            this.EndDate.Size = new System.Drawing.Size(83, 22);
+            this.EndDate.TabIndex = 6;
+            this.EndDate.Text = "EndDate";
+            // 
+            // label6
+            // 
+            this.label6.AutoSize = true;
+            this.label6.Font = new System.Drawing.Font("Montserrat SemiBold", 12F, System.Drawing.FontStyle.Bold);
+            this.label6.ForeColor = System.Drawing.Color.WhiteSmoke;
+            this.label6.Location = new System.Drawing.Point(183, 95);
+            this.label6.Name = "label6";
+            this.label6.Size = new System.Drawing.Size(27, 22);
+            this.label6.TabIndex = 7;
+            this.label6.Text = "to";
+            // 
+            // panel5
+            // 
+            this.panel5.BackColor = System.Drawing.Color.Transparent;
+            this.panel5.Controls.Add(this.guna2PictureBox13);
+            this.panel5.Controls.Add(this.OnHoldStudentsTab);
+            this.panel5.Location = new System.Drawing.Point(0, 407);
+            this.panel5.Name = "panel5";
+            this.panel5.Size = new System.Drawing.Size(212, 52);
+            this.panel5.TabIndex = 9;
+            // 
+            // guna2PictureBox13
+            // 
+            this.guna2PictureBox13.Image = ((System.Drawing.Image)(resources.GetObject("guna2PictureBox13.Image")));
+            this.guna2PictureBox13.ImageRotate = 0F;
+            this.guna2PictureBox13.Location = new System.Drawing.Point(12, 2);
+            this.guna2PictureBox13.Name = "guna2PictureBox13";
+            this.guna2PictureBox13.Size = new System.Drawing.Size(52, 47);
+            this.guna2PictureBox13.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage;
+            this.guna2PictureBox13.TabIndex = 1;
+            this.guna2PictureBox13.TabStop = false;
+            // 
+            // OnHoldStudentsTab
+            // 
+            this.OnHoldStudentsTab.AutoSize = true;
+            this.OnHoldStudentsTab.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.OnHoldStudentsTab.ForeColor = System.Drawing.Color.WhiteSmoke;
+            this.OnHoldStudentsTab.Location = new System.Drawing.Point(65, 13);
+            this.OnHoldStudentsTab.Name = "OnHoldStudentsTab";
+            this.OnHoldStudentsTab.Size = new System.Drawing.Size(130, 24);
+            this.OnHoldStudentsTab.TabIndex = 0;
+            this.OnHoldStudentsTab.Text = "Std. On Hold";
+            this.OnHoldStudentsTab.Click += new System.EventHandler(this.OnHoldStudentsTab_Click);
+            // 
             // AdminDashboardTab
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
@@ -920,6 +1141,7 @@
             this.Controls.Add(this.panel1);
             this.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.Name = "AdminDashboardTab";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "AdminDashboardTab";
             this.Load += new System.EventHandler(this.AdminDashboardTab_Load);
             ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox2)).EndInit();
@@ -964,6 +1186,9 @@
             this.guna2Panel6.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox12)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.DataGridEmployees)).EndInit();
+            this.panel5.ResumeLayout(false);
+            this.panel5.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox13)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -971,6 +1196,7 @@
 
         #endregion
 
+<<<<<<< HEAD
         protected System.Windows.Forms.Label ExamsTab;
         protected Guna.UI2.WinForms.Guna2PictureBox guna2PictureBox2;
         protected Guna.UI2.WinForms.Guna2PictureBox guna2PictureBox3;
@@ -1025,5 +1251,67 @@
         protected Guna.UI2.WinForms.Guna2Button guna2Button1;
         protected System.Windows.Forms.Label label14;
         protected Guna.UI2.WinForms.Guna2DataGridView DataGridEmployees;
+=======
+        private System.Windows.Forms.Label ExamsTab;
+        private Guna.UI2.WinForms.Guna2PictureBox guna2PictureBox2;
+        private Guna.UI2.WinForms.Guna2PictureBox guna2PictureBox3;
+        private System.Windows.Forms.Label EmployeesTab;
+        private System.Windows.Forms.Panel panel4;
+        private Guna.UI2.WinForms.Guna2PictureBox guna2PictureBox5;
+        private System.Windows.Forms.Label TimeTableTabb;
+        private System.Windows.Forms.Panel EmployeeTab;
+        private System.Windows.Forms.Label label9;
+        private System.Windows.Forms.Panel StudentsTab;
+        private System.Windows.Forms.Label StudentTab;
+        private System.Windows.Forms.Panel ExamTab;
+        private Guna.UI2.WinForms.Guna2PictureBox guna2PictureBox6;
+        private System.Windows.Forms.Panel DashboardTab;
+        private Guna.UI2.WinForms.Guna2PictureBox guna2PictureBox1;
+        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Panel panel2;
+        private Guna.UI2.WinForms.Guna2PictureBox guna2PictureBox4;
+        private System.Windows.Forms.Panel panel3;
+        private System.Windows.Forms.Panel panel1;
+        private System.Windows.Forms.Panel LogoutTab;
+        private System.Windows.Forms.Label LogoutBtn;
+        private Guna.UI2.WinForms.Guna2Button PrintBtn;
+        private System.Windows.Forms.Label label10;
+        private Guna.UI2.WinForms.Guna2DataGridView DataGridStudents;
+        private Guna.UI2.WinForms.Guna2Panel guna2Panel1;
+        private System.Windows.Forms.Label StudentsTabb;
+        private Guna.UI2.WinForms.Guna2PictureBox guna2PictureBox7;
+        private System.Windows.Forms.Label StudentCount;
+        private System.Windows.Forms.Label label4;
+        private System.Windows.Forms.Label label5;
+        private Guna.UI2.WinForms.Guna2Panel guna2Panel2;
+        private Guna.UI2.WinForms.Guna2PictureBox guna2PictureBox8;
+        private System.Windows.Forms.Label EmployeeCount;
+        private System.Windows.Forms.Label label7;
+        private Guna.UI2.WinForms.Guna2Panel guna2Panel3;
+        private Guna.UI2.WinForms.Guna2PictureBox guna2PictureBox9;
+        private System.Windows.Forms.Label OnHoldStdCount;
+        private System.Windows.Forms.Label label11;
+        private Guna.UI2.WinForms.Guna2Panel guna2Panel4;
+        private Guna.UI2.WinForms.Guna2PictureBox guna2PictureBox10;
+        private System.Windows.Forms.Label BestPerformance;
+        private System.Windows.Forms.Label label29;
+        private Guna.UI2.WinForms.Guna2Panel guna2Panel5;
+        private Guna.UI2.WinForms.Guna2PictureBox guna2PictureBox11;
+        private System.Windows.Forms.Label Past6MonthCount;
+        private System.Windows.Forms.Label label8;
+        private Guna.UI2.WinForms.Guna2Panel guna2Panel6;
+        private Guna.UI2.WinForms.Guna2PictureBox guna2PictureBox12;
+        private System.Windows.Forms.Label MostAdmittedClass;
+        private System.Windows.Forms.Label label13;
+        private Guna.UI2.WinForms.Guna2Button guna2Button1;
+        private System.Windows.Forms.Label label14;
+        private Guna.UI2.WinForms.Guna2DataGridView DataGridEmployees;
+        private System.Windows.Forms.Label label6;
+        private System.Windows.Forms.Label EndDate;
+        private System.Windows.Forms.Label StartDate;
+        private System.Windows.Forms.Panel panel5;
+        private Guna.UI2.WinForms.Guna2PictureBox guna2PictureBox13;
+        private System.Windows.Forms.Label OnHoldStudentsTab;
+>>>>>>> 835c7f472674a291cbc9de3d9ee38716b03a363b
     }
 }

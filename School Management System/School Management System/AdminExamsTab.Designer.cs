@@ -72,6 +72,9 @@
             this.FilterBtn = new Guna.UI2.WinForms.Guna2Button();
             this.FilterTxt = new Guna.UI2.WinForms.Guna2ComboBox();
             this.label3 = new System.Windows.Forms.Label();
+            this.panel5 = new System.Windows.Forms.Panel();
+            this.guna2PictureBox7 = new Guna.UI2.WinForms.Guna2PictureBox();
+            this.OnHoldStudentsTab = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox1)).BeginInit();
             this.LogoutTab.SuspendLayout();
             this.panel3.SuspendLayout();
@@ -88,6 +91,8 @@
             this.panel4.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox5)).BeginInit();
             this.panel2.SuspendLayout();
+            this.panel5.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox7)).BeginInit();
             this.SuspendLayout();
             // 
             // StudentTab
@@ -251,6 +256,7 @@
             this.LogoutBtn.Size = new System.Drawing.Size(74, 24);
             this.LogoutBtn.TabIndex = 2;
             this.LogoutBtn.Text = "Logout";
+            this.LogoutBtn.Click += new System.EventHandler(this.LogoutBtn_Click);
             // 
             // panel3
             // 
@@ -515,6 +521,7 @@
             // panel1
             // 
             this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(8)))), ((int)(((byte)(43)))));
+            this.panel1.Controls.Add(this.panel5);
             this.panel1.Controls.Add(this.ExamTab);
             this.panel1.Controls.Add(this.panel4);
             this.panel1.Controls.Add(this.EmployeeTab);
@@ -643,6 +650,39 @@
             this.label3.TabIndex = 56;
             this.label3.Text = "Filter Search";
             // 
+            // panel5
+            // 
+            this.panel5.BackColor = System.Drawing.Color.Transparent;
+            this.panel5.Controls.Add(this.guna2PictureBox7);
+            this.panel5.Controls.Add(this.OnHoldStudentsTab);
+            this.panel5.Location = new System.Drawing.Point(0, 406);
+            this.panel5.Name = "panel5";
+            this.panel5.Size = new System.Drawing.Size(212, 52);
+            this.panel5.TabIndex = 59;
+            // 
+            // guna2PictureBox7
+            // 
+            this.guna2PictureBox7.Image = ((System.Drawing.Image)(resources.GetObject("guna2PictureBox7.Image")));
+            this.guna2PictureBox7.ImageRotate = 0F;
+            this.guna2PictureBox7.Location = new System.Drawing.Point(12, 2);
+            this.guna2PictureBox7.Name = "guna2PictureBox7";
+            this.guna2PictureBox7.Size = new System.Drawing.Size(52, 47);
+            this.guna2PictureBox7.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage;
+            this.guna2PictureBox7.TabIndex = 1;
+            this.guna2PictureBox7.TabStop = false;
+            // 
+            // OnHoldStudentsTab
+            // 
+            this.OnHoldStudentsTab.AutoSize = true;
+            this.OnHoldStudentsTab.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.OnHoldStudentsTab.ForeColor = System.Drawing.Color.WhiteSmoke;
+            this.OnHoldStudentsTab.Location = new System.Drawing.Point(65, 13);
+            this.OnHoldStudentsTab.Name = "OnHoldStudentsTab";
+            this.OnHoldStudentsTab.Size = new System.Drawing.Size(130, 24);
+            this.OnHoldStudentsTab.TabIndex = 0;
+            this.OnHoldStudentsTab.Text = "Std. On Hold";
+            this.OnHoldStudentsTab.Click += new System.EventHandler(this.OnHoldStudentsTab_Click);
+            // 
             // AdminExamsTab
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -669,7 +709,9 @@
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.panel2);
             this.Name = "AdminExamsTab";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "  ";
+            this.Load += new System.EventHandler(this.AdminExamsTab_Load);
             ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox1)).EndInit();
             this.LogoutTab.ResumeLayout(false);
             this.LogoutTab.PerformLayout();
@@ -693,6 +735,9 @@
             ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox5)).EndInit();
             this.panel2.ResumeLayout(false);
             this.panel2.PerformLayout();
+            this.panel5.ResumeLayout(false);
+            this.panel5.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox7)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -740,5 +785,8 @@
         private Guna.UI2.WinForms.Guna2Button FilterBtn;
         private Guna.UI2.WinForms.Guna2ComboBox FilterTxt;
         private System.Windows.Forms.Label label3;
+        private System.Windows.Forms.Panel panel5;
+        private Guna.UI2.WinForms.Guna2PictureBox guna2PictureBox7;
+        private System.Windows.Forms.Label OnHoldStudentsTab;
     }
 }

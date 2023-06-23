@@ -48,13 +48,17 @@
             this.label6 = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
             this.guna2PictureBox1 = new Guna.UI2.WinForms.Guna2PictureBox();
+            this.label10 = new System.Windows.Forms.Label();
+            this.ClassTxt = new Guna.UI2.WinForms.Guna2ComboBox();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
             // panel1
             // 
+            this.panel1.Controls.Add(this.label10);
             this.panel1.Controls.Add(this.label9);
+            this.panel1.Controls.Add(this.ClassTxt);
             this.panel1.Controls.Add(this.GenderTxt);
             this.panel1.Controls.Add(this.label7);
             this.panel1.Controls.Add(this.PasswordTxt);
@@ -264,6 +268,7 @@
             this.LoginBtn.Size = new System.Drawing.Size(135, 37);
             this.LoginBtn.TabIndex = 14;
             this.LoginBtn.Text = "Login";
+            this.LoginBtn.Click += new System.EventHandler(this.LoginBtn_Click);
             // 
             // label2
             // 
@@ -312,6 +317,7 @@
             this.SubmitBtn.Size = new System.Drawing.Size(135, 37);
             this.SubmitBtn.TabIndex = 9;
             this.SubmitBtn.Text = "Submit";
+            this.SubmitBtn.Click += new System.EventHandler(this.SubmitBtn_Click);
             // 
             // label6
             // 
@@ -346,6 +352,44 @@
             this.guna2PictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.guna2PictureBox1.TabIndex = 0;
             this.guna2PictureBox1.TabStop = false;
+            // 
+            // label10
+            // 
+            this.label10.AutoSize = true;
+            this.label10.Font = new System.Drawing.Font("Montserrat", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label10.Location = new System.Drawing.Point(344, 394);
+            this.label10.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label10.Name = "label10";
+            this.label10.Size = new System.Drawing.Size(46, 19);
+            this.label10.TabIndex = 61;
+            this.label10.Text = "Class";
+            // 
+            // ClassTxt
+            // 
+            this.ClassTxt.BackColor = System.Drawing.Color.Transparent;
+            this.ClassTxt.BorderRadius = 20;
+            this.ClassTxt.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawFixed;
+            this.ClassTxt.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.ClassTxt.FocusedColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.ClassTxt.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.ClassTxt.Font = new System.Drawing.Font("Segoe UI", 10F);
+            this.ClassTxt.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(68)))), ((int)(((byte)(88)))), ((int)(((byte)(112)))));
+            this.ClassTxt.ItemHeight = 30;
+            this.ClassTxt.Items.AddRange(new object[] {
+            "Class 1",
+            "Class 2",
+            "Class 3",
+            "Class 4",
+            "Class 5",
+            "Class 6",
+            "Class 7",
+            "Class 8",
+            "Class 9",
+            "Class 10"});
+            this.ClassTxt.Location = new System.Drawing.Point(348, 416);
+            this.ClassTxt.Name = "ClassTxt";
+            this.ClassTxt.Size = new System.Drawing.Size(207, 36);
+            this.ClassTxt.TabIndex = 60;
             // 
             // RegisterStudent
             // 
@@ -384,5 +428,7 @@
         private System.Windows.Forms.Label label1;
         private Guna.UI2.WinForms.Guna2TextBox AddressTxt;
         private System.Windows.Forms.Label label9;
+        private System.Windows.Forms.Label label10;
+        private Guna.UI2.WinForms.Guna2ComboBox ClassTxt;
     }
 }

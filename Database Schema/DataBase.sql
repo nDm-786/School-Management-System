@@ -63,6 +63,7 @@ CREATE TABLE Students (
     Gender VARCHAR(10),
 	Password Int,
     ClassID INT,
+    dateofadmission date default getdate(),
     FOREIGN KEY (ClassID) REFERENCES Classes(ClassID)
 );
 

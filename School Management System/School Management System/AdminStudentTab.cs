@@ -32,8 +32,8 @@ namespace School_Management_System
             //con = new SqlConnection(connectionString);
         }
 
-        //readonly SqlConnection con = new SqlConnection(System.Configuration.ConfigurationManager.ConnectionStrings["dbcs"].ConnectionString);
-        SqlConnection  con = new SqlConnection("Data Source=DESKTOP-38NRAVC\\ALISERVER;Initial Catalog=SMS;Integrated Security=True");
+        readonly SqlConnection con = new SqlConnection(System.Configuration.ConfigurationManager.ConnectionStrings["dbcs"].ConnectionString);
+        //SqlConnection  con = new SqlConnection("Data Source=DESKTOP-38NRAVC\\ALISERVER;Initial Catalog=SMS;Integrated Security=True");
         private void LogoutTab_Click(object sender, EventArgs e)
         {
             Application.Exit();
@@ -107,6 +107,7 @@ namespace School_Management_System
         {
             AdminStudentAdd adminStudentAdd = new AdminStudentAdd();
             adminStudentAdd.Show();
+            this.Hide();
         }
 
         private void UpdateBtn_Click(object sender, EventArgs e)
@@ -165,6 +166,23 @@ namespace School_Management_System
         {
             AdminExamsTab et = new AdminExamsTab();
             et.Show();
+            this.Hide();
+        }
+
+        private void FilterBtn_Click(object sender, EventArgs e)
+        {
+            string querry = "Select S.StudentID, S.Name, S.Phone, S.Address, S.ClassID from Students S inner join Classes C on S.ClassID = C.ClassID where C.ClassName = '"+FilterTxt.SelectedItem.ToString()+"'";
+            SqlCommand cmd = new SqlCommand(querry, con);
+            SqlDataAdapter sd = new SqlDataAdapter(cmd);
+            DataTable dt = new DataTable();
+            sd.Fill(dt);
+            DataGrid.DataSource = dt;
+        }
+
+        private void OnHoldStudentsTab_Click(object sender, EventArgs e)
+        {
+            AdminOnHoldStudents adminOnHoldStudents = new AdminOnHoldStudents();
+            adminOnHoldStudents.Show();
             this.Hide();
         }
     }

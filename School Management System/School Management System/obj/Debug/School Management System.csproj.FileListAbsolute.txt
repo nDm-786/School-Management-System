@@ -151,6 +151,7 @@ C:\Users\USER\Source\Repos\nDm-786\School-Management-System\School Management Sy
 C:\Users\USER\Source\Repos\nDm-786\School-Management-System\School Management System\School Management System\obj\Debug\School_Management_System.AdminEmployeesTab.resources
 C:\Users\Mr. Bhatti\source\repos\nDm-786\School-Management-System\School Management System\School Management System\obj\Debug\School_Management_System.RegisterStudent.resources
 C:\Users\Mr. Bhatti\source\repos\nDm-786\School-Management-System\School Management System\School Management System\obj\Debug\School_Management_System.AdminStudentAdd.resources
+<<<<<<< HEAD
 C:\Users\pc\Source\Repos\nDm-786\School-Management-System\School Management System\School Management System\obj\Debug\School_Management_System.AdminDashboardTab.resources
 C:\Users\pc\Source\Repos\nDm-786\School-Management-System\School Management System\School Management System\obj\Debug\School_Management_System.AdminEmployeesTab.resources
 C:\Users\pc\Source\Repos\nDm-786\School-Management-System\School Management System\School Management System\obj\Debug\School_Management_System.AdminExamsTab.resources
@@ -161,3 +162,6 @@ C:\Users\pc\Source\Repos\nDm-786\School-Management-System\School Management Syst
 C:\Users\pc\Source\Repos\nDm-786\School-Management-System\School Management System\School Management System\obj\Debug\School_Management_System.AdminStudentTab.resources
 C:\Users\pc\Source\Repos\nDm-786\School-Management-System\School Management System\School Management System\obj\Debug\School_Management_System.RegisterStudent.resources
 C:\Users\pc\Source\Repos\nDm-786\School-Management-System\School Management System\School Management System\obj\Debug\School_Management_System.SignIn.resources
+=======
+C:\Users\Mr. Bhatti\source\repos\nDm-786\School-Management-System\School Management System\School Management System\obj\Debug\School_Management_System.AdminOnHoldStudents.resources
+>>>>>>> 835c7f472674a291cbc9de3d9ee38716b03a363b

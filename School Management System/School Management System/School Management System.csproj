@@ -254,6 +254,12 @@
     <Compile Include="AdminExamsTab.Designer.cs">
       <DependentUpon>AdminExamsTab.cs</DependentUpon>
     </Compile>
+    <Compile Include="AdminOnHoldStudents.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AdminOnHoldStudents.Designer.cs">
+      <DependentUpon>AdminOnHoldStudents.cs</DependentUpon>
+    </Compile>
     <Compile Include="AdminStudentAdd.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -303,6 +309,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="AdminMDI.resx">
       <DependentUpon>AdminMDI.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AdminOnHoldStudents.resx">
+      <DependentUpon>AdminOnHoldStudents.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="AdminStudentAdd.resx">
       <DependentUpon>AdminStudentAdd.cs</DependentUpon>
